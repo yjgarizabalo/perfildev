@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{!-- Bootstrap 4.3 --}}
+    <link rel="stylesheet" href="/public/bootstrap/css/bootstrap.css">
+    {{!-- Css costum --}}
+    <link rel="stylesheet" href="/public/bootstrap/css/styles.css">
+    {{!-- Tipografia --}}
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    {{!-- Fontawesome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <title>perfildev 👨‍💻</title>
+</head>
+<body>
+    {{!-- navegacion --}}
+   <nav class="navbar navbar-dark bg-dark">
+      <a href="/" class="navbar-brand">
+      <img src="/public/img/perfildev-logo.svg" width="120" height="" alt="perfildev" srcset="">
+      </a>
+   </nav>
+    
+   {{!-- content --}}
+   <div class="container p-4">
+       <div class="row">
+           <div class="col-md-8">
+              {{{ body }}}
+           </div>
+           <div class="col-md-4">
+
+           </div>
+       </div>
+   </div>
+
+</body>
+</html>

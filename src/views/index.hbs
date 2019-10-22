@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="card-title">
+          <i class="far fa-image"></i> Cargar Imagen
+        </h4>
+    </div>
+    <div class="card-body">
+        <form action="/image" method="POST">
+            <div class="form-group">
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" name="image" class="custom-file-input" id="inputGroup" aria-describedat="inputGroupFileAddon" required>
+                    <label class="custom-file-label" for="inputGroupFile">Selecciona tu archivo</label>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" name="titñe" class="form-control" placeholder="Nombre de la imagen" id="" required>
+            </div>
+            <div class="form-group">
+                <textarea name="description" id="" cols="30" rows="2" class="form-control" placeholder="Description" required></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">
+                    <i class="fa fa-upload"></i> Subir Imagen
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
