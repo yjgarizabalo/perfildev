@@ -25,7 +25,7 @@ ctrl.create = async(req, res) => {
         description: req.body.description
       })
       const ImageSaved = await newImg.save()
-      console.log(newImg)
+      // console.log(newImg)
     }
     res.send('Funciona!')
 }
