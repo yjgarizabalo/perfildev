@@ -1,8 +1,8 @@
 <div class="card">
     <div class="card-header">
-        <h4 class="card-title">
+        <h5 class="card-title">
           <i class="far fa-image"></i> Cargar Imagen
-        </h4>
+        </h5>
     </div>
     <div class="card-body">
         <form action="/image" method="POST" enctype="multipart/form-data">
@@ -15,13 +15,13 @@
                 </div>
             </div>
             <div class="form-group">
-                <input type="text" name="title" class="form-control" placeholder="Nombre de la imagen" required>
+                <input type="text" name="title" class="form-control form-control-sm" placeholder="Nombre de la imagen" required>
             </div>
             <div class="form-group">
-                <textarea name="description" id="" cols="30" rows="2" class="form-control" placeholder="description" required></textarea>
+                <textarea name="description" id="" cols="30" rows="1" class="form-control form-control-sm" placeholder="description" required></textarea>
             </div>
             <div class="form-group">
-                <button class="btn btn-success">
+                <button class="btn btn-success btn-sm">
                     <i class="fa fa-upload"></i> Subir Imagen
                 </button>
             </div>
@@ -31,14 +31,16 @@
 
 <div class="card mt-2">
    <div class="card-header">
-        <h3><i class="fa fa-images"></i> Subidas Recientes</h3>
+       <div class="card-title">
+          <h5><i class="fa fa-images"></i> Subidas Recientes</h5>
+       </div>
    </div>
    <div class="card-body">
       <div class="row p-1">
      {{#each images}}
       <div class="col-md-4 p-1">
-        <a href="/images/{{'uniqueId'}}">
-            <img src="/public/upload/{{filename}}" alt="" srcset="" class="w-100 h-100 img-thumbnail">
+        <a href="/image/{{'uniqueId'}}">
+            <img src="/public/upload/{{filename}}" class="w-100 h-100 img-thumbnail">
         </a>
       </div>
      {{/each}}
