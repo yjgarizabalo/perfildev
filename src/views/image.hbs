@@ -21,5 +21,30 @@
             <i class="far fa-clock"></i> {{timeago image.timestamp}}
         </p>
     </div>
-
+</div>
+<div class="card mt-2" style="width: 70%";>
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5>Comentario</h5>
+        <button class="btn btn-info btn-sm" id="btn-toggle-comment">
+            <i class="fa fa-comment"></i> Publica un comentario
+        </button>
+    </div>
+    <div class="card-body">
+        <blockquote>
+            <form action="/image/{{image.uniqueId}}/comment" method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control form-control-sm" name="name" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <input type="text"  class="form-control form-control-sm" name="email" placeholder="Correo Electronico">
+            </div>
+            <div class="form-group">
+                <textarea name="comment" rows="2" class="form-control form-control-sm" placeholder="Tu comentario"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success btn-sm" id="comment"><i class="fa fa-comment"></i> Publicar</button>
+            </div>
+            </form>
+        </blockquote>
+    </div>
 </div>
