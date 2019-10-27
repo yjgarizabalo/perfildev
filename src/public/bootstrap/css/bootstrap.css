@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
 }
 
 abbr[title],
@@ -4892,7 +4892,7 @@ input[type="button"].btn-block {
 }
 
 .card-title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.1rem;
 }
 
 .card-subtitle {
@@ -4913,7 +4913,7 @@ input[type="button"].btn-block {
 }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0.7rem 1.25rem;
   margin-bottom: 0;
   background-color: #515960;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
