@@ -8,9 +8,19 @@ const { Image, Comment } = require('../models')
 const ctrl = {}
 
 ctrl.index =  async (req, res) => {
+   const viewModel = {image: {}, comments: {}}
+
    const image = await Image.findOne({filename: {$regex: req.params.image_id}})
-   const comments = await Comment.find({image_id: image._id})
-   res.render('image', {image, comments})
+   if (image) {
+    image.views = image.views + 1
+    viewModel.image = image
+    await image.save()
+    const comments = await Comment.find({image_id: image._id})
+    viewModel.comments = comments
+    res.render('image', {image, comments})
+   } else {
+    res.redirect('/')
+   }
 }
 
 ctrl.create = (req, res) => {
