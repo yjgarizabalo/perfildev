@@ -54,8 +54,15 @@ ctrl.create = (req, res) => {
     saveImage()
 }
 
-ctrl.like = (req, res) => {
-    
+ctrl.like = async(req, res) => {
+    const image = await Image.findOne({filename: {$regex: req.params.image_id} })
+    if (image) {
+      image.likes = image.likes + 1
+      await image.save()
+      res.json({likes: image.likes})
+    }else {
+      res.status(500).json({errro: 'Error interno'})
+    }
 }
 
 ctrl.comment = async (req, res) => {
