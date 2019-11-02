@@ -17,7 +17,8 @@ ctrl.index =  async (req, res) => {
     await image.save()
     const comments = await Comment.find({image_id: image._id})
     viewModel.comments = comments
-    res.render('image', {image, comments})
+    // res.render('image', {image, comments})
+    res.render('image', viewModel)
    } else {
     res.redirect('/')
    }
