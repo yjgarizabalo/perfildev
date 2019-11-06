@@ -3,12 +3,13 @@ const { randomNumber } = require('../helpers/libs')
 const fs = require('fs-extra')
 const md5 = require('md5')
 
+const sidebar = require('../helpers/sidebar');
 const { Image, Comment } = require('../models')
 
 const ctrl = {}
 
 ctrl.index =  async (req, res) => {
-   const viewModel = {image: {}, comments: {}}
+   const viewModel = {image: {}, comments: []}
 
    const image = await Image.findOne({filename: {$regex: req.params.image_id}})
    if (image) {
@@ -17,7 +18,8 @@ ctrl.index =  async (req, res) => {
     await image.save()
     const comments = await Comment.find({image_id: image._id})
     viewModel.comments = comments
-    res.render('image', {image, comments})
+    // res.render('image', {image, comments})
+    res.render('image', viewModel)
    } else {
     res.redirect('/')
    }
