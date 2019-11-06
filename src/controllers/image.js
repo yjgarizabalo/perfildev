@@ -3,12 +3,13 @@ const { randomNumber } = require('../helpers/libs')
 const fs = require('fs-extra')
 const md5 = require('md5')
 
+const sidebar = require('../helpers/sidebar');
 const { Image, Comment } = require('../models')
 
 const ctrl = {}
 
 ctrl.index =  async (req, res) => {
-   const viewModel = {image: {}, comments: {}}
+   const viewModel = {image: {}, comments: []}
 
    const image = await Image.findOne({filename: {$regex: req.params.image_id}})
    if (image) {

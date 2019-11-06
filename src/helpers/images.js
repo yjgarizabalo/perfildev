@@ -4,7 +4,7 @@ module.exports = {
 
     async popular() {
         const images = await Image.find()
-            .limit(2)
+            .limit(9)
             .sort({ likes: -1 })
         return images
     }

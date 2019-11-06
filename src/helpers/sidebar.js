@@ -4,16 +4,16 @@ const Comments = require('./comments')
 
 module.exports = async viewModel => {
 
-    const result = await  Promise.all([
+    const results = await  Promise.all([
         Images.popular(),
         Stats(),
         Comments.newest()
     ])
 
     viewModel.sidebar = {
-       stat: result[0],
-       popular: result[1],
-       Comments: result[2]
+       stat: results[0],
+       popular: results[1],
+       comments: results[2]
     }
 
     return viewModel

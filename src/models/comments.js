@@ -1,13 +1,23 @@
-const { Schema, model } = require('mongoose')
-const  ObjectId = Schema.ObjectId
+const mongoose = require('mongoose');
+const { Schema } = mongoose;
+const ObjectId = Schema.ObjectId;
+const path = require('path');
 
-const commentSchema = new Schema ({
+const CommentSchema = new Schema({
     image_id: { type: ObjectId },
-    name: { type: String },
     email: { type: String },
+    name: { type: String },
     gravatar: { type: String },
     comment: { type: String },
     timestamp: { type: Date, default: Date.now }
-})
+});
 
-module.exports = model('Comment', commentSchema)
+CommentSchema.virtual('image')
+    .set(function (image) {
+        this._image = image;
+    })
+    .get(function () {
+        return this._image;
+    });
+
+module.exports = mongoose.model('Comment', CommentSchema);

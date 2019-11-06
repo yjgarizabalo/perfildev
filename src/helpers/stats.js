@@ -1,7 +1,7 @@
 const { Comment, Image } = require('../models')
 
 async function imageCounter() {
-    return await Image.countDocuments
+    return await Image.countDocuments()
 }
 
 async function commentsCounter() {
@@ -19,13 +19,13 @@ async function imageTotalviewsCounter() {
 }
 
 async function likesTotalCounter() {
- const result =  await Image.aggregate([{
+    const result = await Image.aggregate([{
         $group: {
             _id: '1',
             likesTotal: { $sum: '$likes' }
         }
     }])
-    return result[0].viewsTotal
+    return result[0].likesTotal
 }
 
 
