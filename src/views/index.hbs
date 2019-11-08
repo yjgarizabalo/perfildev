@@ -1,24 +1,27 @@
 <div class="card">
     <div class="card-header">
         <h5 class="card-title">
-          <i class="far fa-image"></i> Cargar Imagen
+            <i class="far fa-image"></i> Cargar Imagen
         </h5>
     </div>
     <div class="card-body">
         <form action="/image" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <div class="input-group">
-                  <div class="custom-file">
-                    <input type="file" name="image" class="custom-file-input" id="inputGroup" aria-describedat="inputGroupFileAddon" required>
-                    <label class="custom-file-label" for="inputGroupFile">Selecciona tu archivo</label>
-                  </div>
+                    <div class="custom-file">
+                        <input type="file" name="image" class="custom-file-input" id="inputGroup"
+                            aria-describedat="inputGroupFileAddon" required>
+                        <label class="custom-file-label" for="inputGroupFile">Selecciona tu archivo</label>
+                    </div>
                 </div>
             </div>
             <div class="form-group">
-                <input type="text" name="title" class="form-control form-control-sm" placeholder="Nombre de la imagen" required>
+                <input type="text" name="title" class="form-control form-control-sm" placeholder="Nombre de la imagen"
+                    required>
             </div>
             <div class="form-group">
-                <textarea name="description" id="" cols="30" rows="1" class="form-control form-control-sm" placeholder="description" required></textarea>
+                <textarea name="description" id="" cols="30" rows="1" class="form-control form-control-sm"
+                    placeholder="description" required></textarea>
             </div>
             <div class="form-group">
                 <button class="btn btn-success btn-sm">
@@ -30,20 +33,20 @@
 </div>
 
 <div class="card mt-2">
-   <div class="card-header">
-       <div class="card-title">
-          <h5><i class="fa fa-images"></i> Subidas Recientes</h5>
-       </div>
-   </div>
-   <div class="card-body">
-      <div class="row p-1">
-     {{#each images}}
-      <div class="col-md-4 p-1">
-        <a href="/image/{{'uniqueId'}}">
-            <img src="/public/upload/{{filename}}" class="w-100 h-100 img-thumbnail">
-        </a>
-      </div>
-     {{/each}}
-      </div>
-   </div>
+    <div class="card-header">
+        <div class="card-title">
+            <h5><i class="fa fa-images"></i> Subidas Recientes</h5>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row p-1">
+            {{#each images}}
+            <div class="col-md-4 p-1">
+                <a href="/image/{{'uniqueId'}}">
+                    <img src="/public/upload/{{filename}}" class="w-100 h-100 img-thumbnail">
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
 </div>
