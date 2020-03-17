@@ -1,9 +1,8 @@
 module.exports = {
-
-    //DB
     database: {
-      URI: 'mongodb://localhost/perfildevdb'
+        host: 'localhost',
+        user: 'root',
+        password: 'Perfildev#19#_dev',
+        database: 'database_perfildev'
     }
-  
-
-  }
+}

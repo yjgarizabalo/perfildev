@@ -1,0 +1,55 @@
+//¿que es perfil dev
+
+// hero
+
+.hero-about {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: url(../img/bg-perfildev-about.svg);
+    background-size: cover;
+}
+
+.content-hero-about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+// end 
+
+
+// seccion-about
+
+.hero-showcases {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+}
+
+.h100-showcases {
+    height: 100%;
+}
+
+.content-100-showcases {
+    height: 100vh;
+}
+
+.content-hero-showcases {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.title-hero-showcases {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+// endseccion-about 

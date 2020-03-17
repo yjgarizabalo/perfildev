@@ -1,0 +1,268 @@
+// importar vistas
+
+// inicio
+@import "components/index";
+// ¿que es perfildev?
+@import "components/about";
+// politicas
+@import "components/politicas";
+//contacto
+@import "components/contact";
+//navegacion
+@import "components/navegations";
+//profile
+@import "components/profile";
+//footer
+@import "components/footer";
+
+// end importar vistas
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* formulario de ingreso */
+
+.input-group {
+  position: relative;
+  margin-bottom: 15px auto;
+}
+
+/* input*/
+
+.input-area {
+  width: 70%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+  padding: 10px 10px;
+  font-size: 1rem;
+  background: transparent;
+  position: relative;
+}
+
+.input-area + .label {
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #aaaaaa;
+  transition: 0.1s ease-in-out;
+}
+
+.input-area:focus {
+  outline: none;
+  border: 1.5px solid rebeccapurple;
+  transition: all 0.1s ease-in-out;
+}
+
+.input-area:focus + .label,
+.input-area.has_class + .label {
+  top: -8px;
+  color: rebeccapurple;
+  font-size: 0.7rem;
+}
+
+/* input-add */
+
+.input-add {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+  padding: 10px 10px;
+  font-size: 1rem;
+  background: transparent;
+  position: relative;
+}
+
+.input-add + .label {
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #aaaaaa;
+  transition: 0.1s ease-in-out;
+}
+
+.input-add:focus {
+  outline: none;
+  border: 1.5px solid rebeccapurple;
+  transition: all 0.1s ease-in-out;
+}
+
+.input-add:focus + .label,
+.input-add.has_class + .label {
+  top: -8px;
+  color: rebeccapurple;
+  font-size: 0.7rem;
+}
+
+/* input-edit */
+
+.input-edit {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+  padding: 10px 10px;
+  font-size: 1rem;
+  background: transparent;
+  position: relative;
+}
+
+.input-edit + .label {
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #aaaaaa;
+  transition: 0.1s ease-in-out;
+}
+
+.input-edit:focus {
+  outline: none;
+  border: 1.5px solid rebeccapurple;
+  transition: all 0.1s ease-in-out;
+}
+
+.input-edit:focus + .label,
+.input-edit.has_class + .label {
+  top: -8px;
+  color: rebeccapurple;
+  font-size: 0.7rem;
+}
+
+
+/* conainer-box */
+
+.container-box {
+  /* margin-top : 50px;
+    margin-bottom : 50px; */
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+/* text-alert */
+
+@media (max-width: 768px) {
+  .alerta {
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.text-alert a {
+  font-size: 35px;
+}
+
+/* endtext-alert */
+
+/* registrate a la comunidad */
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url(../img/bg-jobs-perfildev.svg) no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+@media (min-width: 1200px) {
+  .col-xl-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
+
+/* endregistrate a la comunidad */
+
+/* animacion-loader*/
+
+.loader-page {
+  position: fixed;
+  z-index: 25000;
+  background: rgb(255, 255, 255);
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.loader-page::before {
+  content: "";
+  position: absolute;
+  border: 5px solid #280144;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 4px solid rgba(40, 1, 68, 0);
+  border-top: 4px solid rgba(40, 1, 68, 0);
+  animation: rotarload 1s linear infinite;
+  transform: rotate(0deg);
+}
+
+@keyframes rotarload {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-page::after {
+  content: "";
+  position: absolute;
+  border: 5px solid rgba(40, 1, 68, 0.5);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 2px solid rgba(40, 1, 68, 0);
+  border-top: 2px solid rgba(40, 1, 68, 0);
+  animation: rotarload 1s ease-out infinite;
+  transform: rotate(0deg);
+}
+
+/* end animacion-loader */

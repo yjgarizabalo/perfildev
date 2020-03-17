@@ -1,0 +1,32 @@
+//profile
+
+// banner-profile
+
+.profile-hero {
+    position: relative;
+    top: 0;
+    height: 65vh;
+    width: 100%;
+    background: url(../img/bg-perfildev-about.svg);
+    background-size: cover;
+}
+
+.content-hero-profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.profile-content-100 {
+    height: 65vh;
+}
+
+.h100-profile {
+    height: 50%;
+}
+
+// endbanner-profile
+
+// end profile

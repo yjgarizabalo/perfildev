@@ -1,26 +1,40 @@
 {
-  "name": "perfildev",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "errorhandler": "^1.5.1",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "fs-extra": "^8.1.0",
-    "md5": "^2.2.1",
-    "moment": "^2.24.0",
-    "mongoose": "^5.7.5",
-    "morgan": "^1.9.1",
-    "multer": "^1.4.2"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4"
-  }
+    "name": "perfildev-front",
+    "version": "1.0.0",
+    "description": "Mejora como luce tu  hoja de vida con perfildev 🚀",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/",
+        "scss": "node-sass -w ./src/public/assets/scss -o ./src/public/assets/css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "connect-flash": "^0.1.1",
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0",
+        "express-mysql-session": "^2.1.3",
+        "express-session": "^1.17.0",
+        "express-validator": "^6.4.0",
+        "morgan": "^1.9.1",
+        "mysql": "^2.18.1",
+        "node-sass": "^4.13.1",
+        "nodemailer": "^6.4.2",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "timeago.js": "^4.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yjgarizabalo/perfildev-front.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yjgarizabalo/perfildev-front/issues"
+    },
+    "homepage": "https://github.com/yjgarizabalo/perfildev-front#readme"
 }
