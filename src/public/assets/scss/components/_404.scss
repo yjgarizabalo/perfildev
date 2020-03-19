@@ -1,0 +1,28 @@
+// error 404
+
+
+.hero-no-pagina {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    color:#FF4600;
+  }
+  
+  .h100-no-pagina {
+    height: 100%;
+  }
+  
+  .content-100-no-pagina {
+    height: 100vh;
+   
+  }
+  
+  .content-hero-no-pagina {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }

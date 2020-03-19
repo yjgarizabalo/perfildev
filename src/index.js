@@ -40,6 +40,7 @@ app.use(express.json())
 app.use(passport.initialize())
 app.use(passport.session())
 
+
 // variables globales
 app.use((req, res, next) => {
     app.locals.success = req.flash('success')
@@ -62,7 +63,13 @@ app.use(require('./routes/send-contact')) // ruta para enviar info de contacto
 // public
 app.use(express.static(path.join(__dirname, 'public')))
 
+//Error 404 
+app.use(function(req, res, next){
+    res.status(404).render('partials/404.hbs');
+});
+
 // iniciar servidor
 app.listen(app.get('port'), () => {
     console.log('Server on port', app.get('port'))
 })
+
