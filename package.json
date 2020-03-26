@@ -1,0 +1,35 @@
+{
+  "name": "perfildev",
+  "version": "1.0.0",
+  "description": "tu mejor version en el mundo laboral 🚀",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express-handlebars": "^4.0.0",
+    "express-mysql-session": "^2.1.4",
+    "express-validator": "^6.4.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "node-sass": "^4.13.1",
+    "nodemailer": "^6.4.6",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "timeago.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjgarizabalo/perfildev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yjgarizabalo/perfildev/issues"
+  },
+  "homepage": "https://github.com/yjgarizabalo/perfildev#readme"
+}
