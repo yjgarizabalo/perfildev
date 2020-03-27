@@ -1,0 +1,71 @@
+<!-- navbar-perfildev -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/perfildev-logo-dark.svg" width="120" height="auto" class="d-inline-block align-top"
+                alt="perfildev-logo-dark">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="social-list list-inline mt-3 mt-lg-0 mb-lg-0 d-flex ml-lg-2">
+                <li class="social-list list-inline-item">
+                    <a class="text-decoration-none m-1" href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list list-inline-item">
+                    <a class="text-decoration-none m-1" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list list-inline-item">
+                    <a class="text-decoration-none m-1" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-lg-auto">
+                <form class="form-inline my-2 my-lg-0 ml-2">
+                    <div style="width: 390px;" class="buscador buscador-responsive" id="bs1"></div>
+                </form>
+                <li class="nav-item">
+                    <a class="nav-link ml-2" href="/links/about">¿Qué es perfildev?</a>
+                </li>
+                {{#if user}}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/links">Todos los Links</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/links/add">Agregar Links</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Cerrar sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{{user.username}}</a>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link ml-2" href="/signin">Iniciar sesión</a>
+                </li>
+                <li>
+                    <a class="btn btn-outline-primary ml-2" href="/signup">Registrate</a>
+                </li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- endnavbar-perfildev -->
