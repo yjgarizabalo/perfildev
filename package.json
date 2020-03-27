@@ -20,7 +20,9 @@
     "nodemon": "^2.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "scss": "node-sass -w ./src/public/assets/scss -o ./src/public/assets/css"
   },
   "repository": {
     "type": "git",

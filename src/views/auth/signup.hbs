@@ -62,3 +62,56 @@
     </div>
 </section>
 <!-- endsignup -->
+
+<!-- Default form register -->
+<form class="text-center border border-light p-5" action="/signup" method="POST">
+
+    <p class="h4 mb-4">Registrate aquí</p>
+
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- nombre -->
+            <label><small><b>Nombre</b></small> </label>
+            <input type="text" class="form-control" name="nombre">
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <label><small><b>Apellidos</b></small> </label>
+            <input type="text" class="form-control" name="apellidos">
+        </div>
+    </div>
+
+    <!-- E-mail -->
+    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" name="">
+
+    <!-- Password -->
+    <input type="password" id="defaultRegisterFormPassword" class="form-control" name="cotraseña" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+        At least 8 characters and 1 digit
+    </small>
+
+    <!-- Phone number -->
+    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+        Optional - for two step authentication
+    </small>
+
+    <!-- Newsletter -->
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+    </div>
+
+    <!-- Sign up button -->
+    <button class="btn btn-primary my-4 btn-block" type="submit">Sign in</button>
+
+
+    <hr>
+
+    <!-- Terms of service -->
+    <p>By clicking
+        <em>Sign up</em> you agree to our
+        <a href="" target="_blank">terms of service</a>
+
+</form>
+<!-- Default form register -->
