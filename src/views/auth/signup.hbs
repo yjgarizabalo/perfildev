@@ -16,44 +16,66 @@
                 <div class="buscador" id="bs1"></div>
             </div>
 
-            <div class="col-sm-6 p-4">
+            <div class="col-sm-6 pt-5">
                 <div class="row">
                     <div class="mx-auto">
+                        <!-- formulario de registro -->
                         <div class="card bg-transparent text-center">
                             <div class="card-header">
                                 <h3>Registrate aquí</h3>
                             </div>
                             <div class="card-body">
                                 <img src="../assets/img/perfildev-logo-dark.svg" alt="Logo perfildev"
-                                    class="card-img-top mx-auto m-4  w-50">
-                                <form action="/signup" method="POST">
-                                    <div class="form-group text-left">
-                                        <label><small><b>Nombre Completo</b></small> </label>
-                                        <input type="text" name="fullname" class="form-control" id="nombre"
-                                            aria-describedby="nombre">
-                                        <small id="emailHelp" class="form-text text-muted">Desbes suministrar tu primer
-                                            nombre y tu primer apellido</small>
+                                    class="card-img-top mx-auto m-1 w-50">
+                                <form class="text-center" action="/signup" method="POST">
+                                    <div class="form-row mb-1">
+                                        <div class="col">
+                                            <!-- nombre -->
+                                            <div class="text-left"><label><small><b>Nombre</b></small></label></div>
+                                            <input type="text" class="form-control" name="nombre">
+                                        </div>
+                                        <div class="col">
+                                            <!-- apellido -->
+                                            <div class="text-left"><label><small><b>Apellidos</b></small></label></div>
+                                            <input type="text" class="form-control" name="apellidos">
+                                        </div>
                                     </div>
-                                    <div class="form-group text-left">
-                                        <label><small><b>Email</b></small> </label>
-                                        <input type="email" name="username" class="form-control">
-                                    </div>
-                                    <div class="form-group text-left">
-                                        <label><small><b>Contraseña</b></small></label>
-                                        <input type="password" name="password" class="form-control">
-                                    </div>
+
+                                    <!-- email -->
+                                    <div class="text-left"><label><small><b>Correo Electronico</b></small></label></div>
+                                    <input type="email" class="form-control mb-1"
+                                        name="username">
+
+                                    <!-- contraseña -->
+                                    <div class="text-left"><label><small><b>Constraseña</b></small></label></div>
+                                    <input type="password" class="form-control" name="password">
+                                    <small  class="form-text text-muted mb-1">
+                                        Al menos 8 caracteres y 1 numero
+                                    </small>
+
+                                    <!-- celular -->
+                                    <div class="text-left"><label><small><b>Teléfono</b></small> </label></div>
+                                    <input type="text" class="form-control">
+                                    <small class="form-text text-muted mb-2">
+                                        Opcional: para registrarse
+                                    </small>
+
+                                    <!-- terminos -->
                                     <div class="form-group form-check text-left">
                                         <input type="checkbox" class="form-check-input" required>
                                         <label class="form-check-label" for="exampleCheck1"><small>Aceptar terminanos,
                                                 <a class="text-primary" href="#"><b>terminos y
                                                         condiciones</b></a></small></label>
                                     </div>
-                                    <div class="from-control">
-                                        <button class="btn btn-success btn-block">Registarte 🚀</button>
-                                    </div>
+
+                                    <!-- boton -->
+                                    <button class="btn btn-primary my-2 btn-block" type="submit">Registrarse</button>
+
                                 </form>
                             </div>
+
                         </div>
+                        <!-- end formulario de registro -->
                     </div>
                 </div>
             </div>
@@ -62,56 +84,3 @@
     </div>
 </section>
 <!-- endsignup -->
-
-<!-- Default form register -->
-<form class="text-center border border-light p-5" action="/signup" method="POST">
-
-    <p class="h4 mb-4">Registrate aquí</p>
-
-    <div class="form-row mb-4">
-        <div class="col">
-            <!-- nombre -->
-            <label><small><b>Nombre</b></small> </label>
-            <input type="text" class="form-control" name="nombre">
-        </div>
-        <div class="col">
-            <!-- Last name -->
-            <label><small><b>Apellidos</b></small> </label>
-            <input type="text" class="form-control" name="apellidos">
-        </div>
-    </div>
-
-    <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" name="">
-
-    <!-- Password -->
-    <input type="password" id="defaultRegisterFormPassword" class="form-control" name="cotraseña" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-        At least 8 characters and 1 digit
-    </small>
-
-    <!-- Phone number -->
-    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-        Optional - for two step authentication
-    </small>
-
-    <!-- Newsletter -->
-    <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
-    </div>
-
-    <!-- Sign up button -->
-    <button class="btn btn-primary my-4 btn-block" type="submit">Sign in</button>
-
-
-    <hr>
-
-    <!-- Terms of service -->
-    <p>By clicking
-        <em>Sign up</em> you agree to our
-        <a href="" target="_blank">terms of service</a>
-
-</form>
-<!-- Default form register -->
