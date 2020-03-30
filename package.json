@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
     "express-handlebars": "^4.0.0",
     "express-mysql-session": "^2.1.4",
     "express-validator": "^6.4.0",
