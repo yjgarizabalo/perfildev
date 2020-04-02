@@ -14,16 +14,12 @@
     height: 100%;
 }
 
-.content-100-politicas {
-    height: 100vh;
-}
 
-.content-hero-politicas {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+.icon-politica {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    vertical-align: middle;
 }
 
 // end politcas
