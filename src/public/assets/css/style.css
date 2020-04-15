@@ -162,7 +162,7 @@
 
 #searchList list-item:hover {
   background-color: #f5f5f5;
-  color: blueviolet; }
+  color: #500089; }
 
 /* responsive */
 @media (max-width: 575.98px) {
