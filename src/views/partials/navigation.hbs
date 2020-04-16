@@ -13,17 +13,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="social-list list-inline mt-3 mt-lg-0 mb-lg-0 d-flex ml-lg-2">
                 <li class="social-list list-inline-item">
-                    <a class="text-decoration-none m-1" href="#">
+                    <a class="text-decoration-none m-1" href="#" alt="github-perfildev">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li class="social-list list-inline-item">
-                    <a class="text-decoration-none m-1" href="#">
+                    <a class="text-decoration-none m-1" href="#" alt="twitter-perfildev">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li>
                 <li class="social-list list-inline-item">
-                    <a class="text-decoration-none m-1" href="#">
+                    <a class="text-decoration-none m-1" href="#" alt="instagram-perfildev">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
@@ -33,7 +33,7 @@
                     <div style="width: 390px;" class="buscador buscador-responsive" id="bs1"></div>
                 </form>
                 <li class="nav-item">
-                    <a class="nav-link ml-2" href="/links/about">¿Qué es perfildev?</a>
+                    <a class="nav-link ml-2" href="/links/about" alt="Pefildev">¿Qué es perfildev?</a>
                 </li>
                 {{#if user}}
                 <li class="nav-item dropdown">
@@ -42,26 +42,26 @@
                         Links
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/links">Todos los Links</a>
+                        <a class="dropdown-item" href="/links" alt="links">Todos los Links</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/links/add">Agregar Links</a>
+                        <a class="dropdown-item" href="/links/add" alt="agregar links">Agregar Links</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile">Perfil</a>
+                    <a class="nav-link" href="/profile" alt="pefil">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/logout">Cerrar sesión</a>
+                    <a class="nav-link" href="/logout" alt="cerrar sesión">Cerrar sesión</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{user.nombre}}</a>
+                    <a class="nav-link" href="/profile" alt="usuario">{{user.nombre}}</a>
                 </li>
                 {{else}}
                 <li class="nav-item">
-                    <a class="nav-link ml-2" href="/signin">Iniciar sesión</a>
+                    <a class="nav-link ml-2" href="/signin" alt="iniciar sesión">Iniciar sesión</a>
                 </li>
                 <li>
-                    <a class="btn btn-outline-primary ml-2" href="/signup">Registrate</a>
+                    <a class="btn btn-outline-primary ml-2" href="/signup" alt="registrate">Registrate</a>
                 </li>
                 {{/if}}
             </ul>
