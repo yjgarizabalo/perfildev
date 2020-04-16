@@ -133,6 +133,14 @@
   margin-right: 20px;
   vertical-align: middle; }
 
+.hero-contact {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background: url(../img/bg-perfildev-about.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
 .social-list li {
   font-size: 1.1rem;
   background: #f5f6fe;
