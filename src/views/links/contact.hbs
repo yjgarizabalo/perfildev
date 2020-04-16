@@ -2,28 +2,30 @@
 {{> loader}}
 {{!-- end loader --}}
 
-<section class="hero" id="home">
-    <div class="container h100">
-        <div class="content-hero content-100">
-            <div id="" class="col-sm-6">
+<section class="hero-contact bg-dark">
+    <div class="container">
+        <div class="row vh-100">
+            <div class="col-sm-6 align-self-center text-white">
                 <h1 class="title-hero site-headline font-weight-bold mb-3">Contactanos 📞</h1>
                 <p>Para mayor información, deja tu mensaje pronto nuestro equipo se pondra en contacto contigo.
-                    <span class="h6 text-primary font-weight-bolder">¡Buscamos</span> <span id="app"
-                        class="h6 text-primary font-weight-bolder"></span>
+                    <span class="h6 text-white font-weight-bolder">¡Buscamos</span> <span id="app"
+                        class="h6 text-white font-weight-bolder"></span>
                 </p>
             </div>
             <!--//options-section-->
-            <div class="col-sm-6 p-2">
+            <div class="col-sm-4 align-self-center p-2 text-white">
                 <div class="row">
-                    <div class="mx-auto">
-                        <div class="card bg-transparent text-center">
-                            <div class="card-header">
-                                <h3 class="text-center">Contacto</h3>
+                    <div class="col-md-12 offset-md-3"> 
+                        <div class="card bg-transparent text-center border-light">
+                            <div class="card-header border-light">
+                                <h3 class="text-center font-weight-bold">Contacto</h3>
                             </div>
                             <div class="card-body">
-                                <img src="../assets/img/perfildev-logo-dark.svg" alt="Logo perfildev"
-                                    class="card-img-top mx-auto m-4  w-50">
-                                <form id="contact-form" class="contact-form mx-sm-auto" action="/contact" method="POST" >
+                                <div class="text-center">
+                                    <img src="../assets/img/perfildev-logo-light.svg" alt="Logo perfildev"
+                                        class="card-img-top img-fluid w-100 p-4">
+                                </div>
+                                <form id="contact-form" class="contact-form mx-sm-auto" action="/contact" method="POST">
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <input type="text" name="nombre" placeholder="Nombre y Apellido"
@@ -38,7 +40,7 @@
                                                 placeholder="Escribe tu mensaje ✏️" rows="4"></textarea>
                                         </div>
                                         <div class="form-group col-12">
-                                            <button type="submit" class="btn btn-success btn-block">Enviar</button>
+                                            <button type="submit" class="btn btn-warning text-dark btn-block">Enviar</button>
                                         </div>
                                     </div>
                                     <!--//form-row-->
