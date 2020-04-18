@@ -1,4 +1,5 @@
-// Start of Async Drift Code
+//Start of Async Drift Code
+
 "use strict";
 
 !function() {
@@ -24,4 +25,4 @@
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('hp4fxrgr8huv');
 
-// End of Async Drift Code 
+//End of Async Drift Code
