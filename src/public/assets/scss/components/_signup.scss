@@ -1,11 +1,12 @@
-@media (max-width: 320px) {
-    .hero-signup {
-        padding: 20% 0 45% 0;
-    }
-}
 @media (max-width: 575.98px) {
     .hero-signup {
-        padding: 20% 0 35% 0;
+        padding: 20% 2% 35% 2%;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero-signup {
+        padding: 20% 2% 80% 2%;
     }
 }
 
