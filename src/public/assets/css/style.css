@@ -9,9 +9,11 @@
   font-size: 50px; }
 
 /* responsive */
-@media (max-width: 320px) {
+@media (max-width: 767.98px) {
   .hero-index {
-    padding: 15% 0 10% 0; } }
+    padding: 15% 0 10% 0; }
+  .hero h1 {
+    font-size: 2.3rem; } }
 
 @media (max-width: 575.98px) {
   .hero-index {
@@ -19,11 +21,9 @@
   .hero h1 {
     font-size: 2.3rem; } }
 
-@media (max-width: 767.98px) {
+@media (max-width: 320px) {
   .hero-index {
-    padding: 15% 0 10% 0; }
-  .hero h1 {
-    font-size: 2.3rem; } }
+    padding: 15% 0 10% 0; } }
 
 /* end-Hero-perfildev index */
 /* tutorial */
@@ -122,12 +122,28 @@
   vertical-align: middle; }
 
 .hero-contact {
-  position: relative;
-  top: 0;
-  width: 100%;
   background: url(../img/bg-perfildev-about.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%; }
+
+/* responsive */
+@media (max-width: 767.98px) {
+  .hero-contact {
+    padding: 15% 0 10% 0; }
+  .hero-contact h1 {
+    font-size: 2.3rem; } }
+
+@media (max-width: 575.98px) {
+  .hero-contact {
+    padding: 20% 0 10% 0; }
+  .hero-contact h1 {
+    font-size: 2.3rem; } }
+
+@media (max-width: 320px) {
+  .hero-contact {
+    padding: 25% 0 35% 0; }
+  .hero-contact h1 {
+    font-size: 2rem; } }
 
 .social-list li {
   font-size: 1.1rem;
@@ -219,15 +235,19 @@ footer.footer {
 
 @media (max-width: 575.98px) {
   .hero-signin {
-    padding: 20% 0 5% 0; } }
+    padding: 20% 2% 5% 2%; } }
 
 @media (max-width: 320px) {
-  .hero-signup {
-    padding: 20% 0 45% 0; } }
+  .hero-signin {
+    padding: 20% 2% 10% 2%; } }
 
 @media (max-width: 575.98px) {
   .hero-signup {
-    padding: 20% 0 35% 0; } }
+    padding: 20% 2% 35% 2%; } }
+
+@media (max-width: 320px) {
+  .hero-signup {
+    padding: 20% 2% 80% 2%; } }
 
 body {
   font-family: "Poppins", sans-serif; }
