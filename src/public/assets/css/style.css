@@ -226,6 +226,9 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
+.icon-nav {
+  content: "<i class=" fab fa-github "></i>"; }
+
 .hero-error404 {
   position: relative;
   top: 0;
