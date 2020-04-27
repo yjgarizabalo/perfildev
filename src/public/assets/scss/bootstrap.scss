@@ -33,6 +33,7 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Poppins", sans-serif;;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Poppins", sans-serif;;
+  font-display: swap;
 }
 
 *,
@@ -46,6 +47,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-display: swap;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -61,6 +63,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  font-display: swap;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
