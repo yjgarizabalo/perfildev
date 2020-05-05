@@ -38,7 +38,7 @@ router.post('/contact', async(req, res) => {
 
     console.log('Message the contact form', info.messageId)
     req.flash('contact', 'Se Enviado tu Mensaje con Exito 📧')
-    res.redirect('/links/contact')
+    res.redirect('/template/contact')
 })
 
 module.exports = router
