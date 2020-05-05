@@ -53,7 +53,7 @@ app.use((req, res, next) => {
 // routes
 app.use(require('./routes/'))
 app.use(require('./routes/authentication'))
-app.use('/links', require('./routes/links'))
+app.use('/template', require('./routes/template'))
 app.use(require('./routes/newsletter')) // ruta para enviar email
 app.use(require('./routes/send-contact')) // ruta para enviar info de contacto
 
@@ -64,7 +64,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 //error 404
 app.use(function(req,res){
-    res.status(404).render('links/404.hbs');
+    res.status(404).render('template/404.hbs');
 });
 
 // iniciar servidor

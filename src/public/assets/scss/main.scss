@@ -1,279 +1,428 @@
-// importar vistas
-
-// tipografia
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-// inicio
-@import "components/index";
-// ¿que es perfildev?
-@import "components/about";
-// politicas
-@import "components/politicas";
-//contacto
-@import "components/contact";
-//navegacion
-@import "components/navegations";
-//profile
-@import "components/profile";
-//footer
-@import "components/footer";
-//error404
-@import "components/404";
-//signin
-@import "components/signin";
-//signup
+// vistas
+
+// signin
+@import "components/signin.scss";
+// signup
 @import "components/signup";
 
+// end vistas
 
-// end importar vistas
+:root {
+    --primario:#280144;
+    --segundario:#2B0082;
+    --blanco:#ffffff;
+    --ligth:#f7f7f7;
+    --fondo:#FEFEFE ;
+    --gris:#CCCCCC;
+    --oscuro:#3c3c3c;
+    --dark:#272727;
+    --negro:#181818;
+    --naranja:#FF8E00;
+    --amarillo:#FFE500; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
+    background: var(--fondo);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    color: var(--dark);
 }
 
-/* formulario de ingreso */
-
-.input-group {
-  position: relative;
-  margin-bottom: 15px auto;
+a {
+    text-decoration: none;
 }
 
-/* input*/
-
-.input-area {
-  width: 70%;
-  height: 50px;
-  border-radius: 5px;
-  border: 1px solid #aaaaaa;
-  padding: 10px 10px;
-  font-size: 1rem;
-  background: transparent;
-  position: relative;
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(70px, 70px) auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "header header"
+                         "menu contenido";
+    transition: .3s all ease;
 }
 
-.input-area + .label {
-  position: absolute;
-  top: 13px;
-  left: 5px;
-  font-size: 1rem;
-  background-color: #ffffff;
-  margin-left: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #aaaaaa;
-  transition: 0.1s ease-in-out;
+.contenedor.activo {
+    grid-template-columns: minmax(270px, 15%)  auto;
 }
 
-.input-area:focus {
-  outline: none;
-  border: 1.5px solid rebeccapurple;
-  transition: all 0.1s ease-in-out;
-}
-
-.input-area:focus + .label,
-.input-area.has_class + .label {
-  top: -8px;
-  color: rebeccapurple;
-  font-size: 0.7rem;
-}
-
-/* input-add */
-
-.input-add {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  border: 1px solid #aaaaaa;
-  padding: 10px 10px;
-  font-size: 1rem;
-  background: transparent;
-  position: relative;
-}
-
-.input-add + .label {
-  position: absolute;
-  top: 13px;
-  left: 5px;
-  font-size: 1rem;
-  background-color: #ffffff;
-  margin-left: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #aaaaaa;
-  transition: 0.1s ease-in-out;
-}
-
-.input-add:focus {
-  outline: none;
-  border: 1.5px solid rebeccapurple;
-  transition: all 0.1s ease-in-out;
-}
-
-.input-add:focus + .label,
-.input-add.has_class + .label {
-  top: -8px;
-  color: rebeccapurple;
-  font-size: 0.7rem;
-}
-
-/* input-edit */
-
-.input-edit {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  border: 1px solid #aaaaaa;
-  padding: 10px 10px;
-  font-size: 1rem;
-  background: transparent;
-  position: relative;
-}
-
-.input-edit + .label {
-  position: absolute;
-  top: 13px;
-  left: 5px;
-  font-size: 1rem;
-  background-color: #ffffff;
-  margin-left: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #aaaaaa;
-  transition: 0.1s ease-in-out;
-}
-
-.input-edit:focus {
-  outline: none;
-  border: 1.5px solid rebeccapurple;
-  transition: all 0.1s ease-in-out;
-}
-
-.input-edit:focus + .label,
-.input-edit.has_class + .label {
-  top: -8px;
-  color: rebeccapurple;
-  font-size: 0.7rem;
-}
-
-
-/* conainer-box */
-
-.container-box {
-  /* margin-top : 50px;
-    margin-bottom : 50px; */
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-
-/* text-alert */
-
-@media (max-width: 768px) {
-  .alerta {
-    padding: 15px;
-    align-items: center;
+.text-center{
     text-align: center;
-    margin: auto;
-  }
 }
 
-.text-alert a {
-  font-size: 35px;
+
+/* ----- header pefildev ----- */
+
+.header{
+    grid-area: header;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background: var(--fondo);
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 30px;
+    grid-template-areas: "logo busqueda iconos";
 }
 
-/* endtext-alert */
+.header .contenedor-logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
 
-/* registrate a la comunidad */
+.header .contenedor-logo .boton-menu {
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    transition: .3s all ease;
+}
+.header .contenedor-logo .boton-menu:hover {
+    background: var(--ligth);
+}
 
-.call-to-action {
+.header .barra-busqueda {
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .barra-busqueda input{
+    min-width: 60%;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid var(--gris);
+    border-radius: 0.3em 0em 0em 0.3em;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header .barra-busqueda button {
+    height: 30px;
+    border: 1px solid var(--gris);
+    border-radius: 0em 0.3em 0.3em 0em;
+    border-left: none;
+    color: var(--dark);
+    background: var(--ligth);
+    padding: 0 25px;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.header .barra-busqueda button:hover {
+    background: var(--gris);
+}
+
+.header .botones-header {
+    grid-area: iconos;
+    display: flex;
+    align-items: center;
+}
+
+.header .botones-header button {
+    background: none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    padding: 7px 9px;
+    border-radius: 100px;
+    color: var(--dark);
+    margin-right: 0.938rem;
+    cursor: pointer;
+}
+
+.header .botones-header button:hover {
+    background: var(--ligth);
+}
+
+.header .botones-header .avatar {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.header .botones-header .avatar img {
+    vertical-align: top;
+    width: 100%;
+    border-radius: 100px;
+}
+
+/* ----- end header pefildev ----- */
+
+/* ----- menu pefildev ----- */
+
+.menu-lateral {
+    grid-area: menu;
+    background: var(--blanco);
+    overflow: hidden;
+}
+
+.menu-lateral a {
+    display: block;
+    padding: 15px 25px;
+    color: var(--dark);
+    min-width: 800px;
+    font-size: 12px;
+}
+
+.menu-lateral a:hover {
+    background: var(--ligth);
+}
+
+.menu-lateral a.activo {
+    background: var(--ligth);
+    font-weight: 600;
+}
+
+.menu-lateral .fas {
+    color: var(--gris);
+    margin-right: 37px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu-lateral a.activo .fas {
+    color: var(--primario);
+}
+
+.menu-lateral hr {
+    margin: 20px 0;
+    border: 1px solid var(--ligth);
+}
+
+/* ----- end menu pefildev ----- */
+
+/* ----- end contenido pefildev ----- */
+
+.main {
+    grid-area: contenido;
+    background: var(--fondo);
+    padding: 20px;
+}
+
+.main .hero-perfildev {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 30px;
+    min-height: 17rem;
+    align-items: center;
+}
+
+.main .hero-perfildev .hero {
+    width: 100%;
+    display: block;
+}
+
+.main .hero-perfildev .hero img {
+    width: 100%;
+}
+
+.main .grid-plantillas {
+    display: grid;
+    grid-gap: 15px 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main .grid-plantillas .plantillas {
+    width: 100%;
+    display: block;
+}
+
+.main .grid-plantillas .plantillas img {
+    width: 100%;
+}
+
+
+/* ----- end contenido pefildev ----- */
+
+/* ------- botones perfildev ------- */
+
+.btn-primario {
+    background: var(--primario);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.8em 1.4em;
+    color: var(--blanco);
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-primario:hover {
+    background: var(--segundario);
+}
+
+.btn-secundario {
+    background: transparent;
+    border: 1px solid var(--primario);
+    border-radius: 0.3em;
+    padding: 0.5em 1.1em;
+    color: var(--primario);
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-secundario:hover {
+    color: var(--blanco);
+    background: var(--primario);
+}
+
+/* ------- fin botones perfildev ------- */
+
+/* ------- paddings - margin perfildev ------- */
+
+.pt-1 {
+    padding-top: 1em;
+}
+.pt-2 {
+    padding-top: 2em;
+}
+.pt-3 {
+    padding-top: 3em;
+}
+.pt-4 {
+    padding-top: 4em;
+}
+.pt-5 {
+    padding-top: 5em;
+}
+
+/* marging */
+
+.mt-1 {
+    margin-top: 1em;
+}
+.mt-2 {
+    margin-top: 2em;
+}
+.mt-3 {
+    margin-top: 3em;
+}
+.mt-4 {
+    margin-top: 4em;
+}
+.mt-5 {
+    margin-top: 5em;
+}
+
+/* ------- fin paddings - margin perfildev ------- */
+
+/* ------- dropdown perfildev ------- */
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
   position: relative;
-  background-color: #343a40;
-  background: url(../img/bg-jobs-perfildev.svg) no-repeat center center;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  display: inline-block;
 }
 
-.call-to-action .overlay {
+.dropdown-content {
+  display: none;
   position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  z-index: 1;
+  border-radius: 0.3rem;
+  font-size:0.7rem;
 }
 
-.form-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -5px;
-  margin-left: -5px;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-@media (min-width: 1200px) {
-  .col-xl-7 {
-    -ms-flex: 0 0 58.333333%;
-    flex: 0 0 58.333333%;
-    max-width: 58.333333%;
-  }
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* ------- end dropdown perfildev ------- */
+
+/* ------- mediaquery perfildev ------- */
+
+@media screen and (max-width: 1200px) {
+    .main .grid-plantillas{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .header .barra-busqueda input {
+        min-width: 70%;
+    }
 }
 
-/* endregistrate a la comunidad */
-
-/* animacion-loader*/
-
-.loader-page {
-  position: fixed;
-  z-index: 25000;
-  background: rgb(255, 255, 255);
-  left: 0px;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
+@media screen and (max-width: 992px) {
+    .main .grid-plantillas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header .barra-busqueda input {
+        min-width: 70%;
+    }
 }
 
-.loader-page::before {
-  content: "";
-  position: absolute;
-  border: 5px solid #280144;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  border-left: 4px solid rgba(40, 1, 68, 0);
-  border-top: 4px solid rgba(40, 1, 68, 0);
-  animation: rotarload 1s linear infinite;
-  transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-rows: auto;
+    }
+
+    .header {
+        padding: 17px;
+        grid-template-columns:auto auto;
+        justify-content: space-between;
+        grid-template-areas: "logo iconos"
+                             "busqueda busqueda";
+    }
+
+    .header .contenedor-logo .logo-pefildev span {
+        display: inline;
+    }
+
+    .header .barra-busqueda input {
+        min-width: auto;
+        width: 100%;
+    }
 }
 
-@keyframes rotarload {
-  0% {
-    transform: rotate(0deg);
-  }
+@media screen and (max-width: 576px) {
+    .main .grid-plantillas{
+        grid-template-columns: 1fr;
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    .header .botones-header button {
+        margin-right: 0.4rem;
+    }
+
+    .main .hero-perfildev {
+        grid-template-columns: 1fr;
+    }
 }
 
-.loader-page::after {
-  content: "";
-  position: absolute;
-  border: 5px solid rgba(40, 1, 68, 0.5);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  border-left: 2px solid rgba(40, 1, 68, 0);
-  border-top: 2px solid rgba(40, 1, 68, 0);
-  animation: rotarload 1s ease-out infinite;
-  transform: rotate(0deg);
-}
 
-/* end animacion-loader */
-
+/* ------- fin mediaquery perfildev ------- */
