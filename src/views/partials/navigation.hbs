@@ -12,45 +12,45 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="social-list list-inline mt-3 mt-lg-0 mb-lg-0 d-flex ml-lg-2">
-                <li class="social-list list-inline-item">
-                    <a class="text-decoration-none m-1" href="https://github.com/perfildev/perfildev"
+                {{!-- <li class="social-list list-inline-item">
+                    <a class="" href="https://github.com/perfildev/perfildev"
                         data-toggle="tooltip" data-placement="bottom" title="github-perfildev">
                         <i class="fab fa-github" alt="github-perfildev"></i>
                     </a>
-                </li>
-                <li class="social-list list-inline-item">
+                </li> --}}
+                {{!-- <li class="social-list list-inline-item">
                     <a class="text-decoration-none m-1" href="https://twitter.com/pefildev" data-toggle="tooltip"
                         data-placement="bottom" title="twitter-perfildev">
                         <i class="fab fa-twitter" alt="twitter-perfildev"></i>
                     </a>
-                </li>
-                <li class="social-list list-inline-item">
+                </li> --}}
+                {{!-- <li class="social-list list-inline-item">
                     <a class="text-decoration-none m-1" href="https://www.instagram.com/perfildev_/"
                         data-toggle="tooltip" data-placement="bottom" title="instagram-perfildev">
                         <i class="fab fa-instagram" alt="instagram-perfildev"></i>
                     </a>
-                </li>
+                </li> --}}
             </ul>
             <ul class="navbar-nav ml-lg-auto">
                 <form class="form-inline my-2 my-lg-0 ml-2">
                     <div style="width: 390px;" class="buscador buscador-responsive" id="bs1"></div>
                 </form>
                 <li class="nav-item">
-                    <a class="nav-link ml-2" href="/links/about" alt="Pefildev">¿Qué es perfildev?</a>
+                    <a class="nav-link ml-2" href="/template/about" alt="Pefildev">¿Qué es perfildev?</a>
                 </li>
                 {{#if user}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Links
+                        template
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/links" alt="links">Todos los Links</a>
+                        <a class="dropdown-item" href="/template" alt="template">Todos los template</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/links/add" alt="agregar links">Agregar Links</a>
+                        <a class="dropdown-item" href="/template/add" alt="agregar template">Agregar template</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                {{!-- <li class="nav-item">
                     <a class="nav-link" href="/profile" alt="pefil">Perfil</a>
                 </li>
                 <li class="nav-item">
@@ -58,7 +58,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/profile" alt="usuario">{{user.nombre}}</a>
-                </li>
+                </li> --}}
                 {{else}}
                 <li class="nav-item">
                     <a class="nav-link ml-2" href="/signin" alt="iniciar sesión">Iniciar sesión</a>

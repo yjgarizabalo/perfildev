@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-  --primario:#280144;
-  --segundario:#2B0082;
-  --blanco:#ffffff;
-  --ligth:#f7f7f7;
-  --fondo:#FEFEFE ;
-  --gris:#CCCCCC;
-  --oscuro:#3c3c3c;
-  --dark:#272727;
-  --negro:#181818;
-  --naranja:#FF8E00;
-  --amarillo:#FFE500; }
+  --primario: #280144;
+  --segundario: #2B0082;
+  --blanco: #ffffff;
+  --ligth: #f7f7f7;
+  --fondo: #FEFEFE;
+  --gris: #CCCCCC;
+  --oscuro: #3c3c3c;
+  --dark: #272727;
+  --negro: #181818;
+  --naranja: #FF8E00;
+  --amarillo: #FFE500; }
 
 * {
   margin: 0;
@@ -33,7 +33,7 @@ a {
   display: grid;
   grid-template-columns: minmax(70px, 70px) auto;
   grid-template-rows: 50px auto;
-  grid-template-areas: "header header" "menu contenido";
+  grid-template-areas: "header header" "menu contenido";
   transition: .3s all ease; }
 
 .contenedor.activo {
@@ -124,6 +124,21 @@ a {
 .header .botones-header button:hover {
   background: var(--ligth); }
 
+.header .botones-header .icono-social {
+  background: none;
+  border: none;
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  padding: 7px 9px;
+  border-radius: 100px;
+  color: var(--dark);
+  margin-right: 0.938rem;
+  text-decoration: none; }
+
+.header .botones-header .icono-social:hover {
+  background: var(--ligth); }
+
 .header .botones-header .avatar {
   width: 30px;
   height: 30px;
@@ -187,7 +202,13 @@ a {
   display: block; }
 
 .main .hero-perfildev .hero img {
-  width: 100%; }
+  width: 100%;
+  display: block; }
+
+.main .hero-perfildev .hero .titulo-hero {
+  font-size: 2.9rem;
+  font-weight: 800;
+  line-height: 3rem; }
 
 .main .grid-plantillas {
   display: grid;
@@ -268,10 +289,17 @@ a {
   margin-top: 5em; }
 
 /* ------- fin paddings - margin perfildev ------- */
-/* ------- dropdown perfildev ------- */
 .dropbtn {
+  background: none;
   border: none;
-  cursor: pointer; }
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  padding: 7px 9px;
+  border-radius: 100px;
+  color: var(--dark);
+  margin-right: 0.938rem;
+  text-decoration: none; }
 
 .dropdown {
   position: relative;
@@ -282,23 +310,27 @@ a {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  overflow: auto;
   z-index: 1;
   border-radius: 0.3rem;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  font-weight: 500; }
 
 .dropdown-content a {
-  color: black;
+  color: var(--dark);
   padding: 12px 16px;
   text-decoration: none;
   display: block; }
 
-.dropdown a:hover {
+.dropdown-content a:hover {
   background-color: #ddd; }
 
-.show {
+.dropdown:hover .dropdown-content {
   display: block; }
 
+.dropdown:hover .dropbtn {
+  background-color: var(--ligth); }
+
+/* ------- dropdown perfildev ------- */
 /* ------- end dropdown perfildev ------- */
 /* ------- mediaquery perfildev ------- */
 @media screen and (max-width: 1200px) {
@@ -320,7 +352,7 @@ a {
     padding: 17px;
     grid-template-columns: auto auto;
     justify-content: space-between;
-    grid-template-areas: "logo iconos" "busqueda busqueda"; }
+    grid-template-areas: "logo iconos" "busqueda busqueda"; }
   .header .contenedor-logo .logo-pefildev span {
     display: inline; }
   .header .barra-busqueda input {
@@ -333,6 +365,9 @@ a {
   .header .botones-header button {
     margin-right: 0.4rem; }
   .main .hero-perfildev {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .main .hero-perfildev .hero .img {
+    grid-template-columns: 1fr;
+    display: block; } }
 
 /* ------- fin mediaquery perfildev ------- */
