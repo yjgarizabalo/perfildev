@@ -1,26 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 // vistas
-
 // signin
 @import "components/signin.scss";
 // signup
 @import "components/signup";
-
 // end vistas
-
 :root {
-    --primario:#280144;
-    --segundario:#2B0082;
-    --blanco:#ffffff;
-    --ligth:#f7f7f7;
-    --fondo:#FEFEFE ;
-    --gris:#CCCCCC;
-    --oscuro:#3c3c3c;
-    --dark:#272727;
-    --negro:#181818;
-    --naranja:#FF8E00;
-    --amarillo:#FFE500; 
+    --primario: #280144;
+    --segundario: #2B0082;
+    --blanco: #ffffff;
+    --ligth: #f7f7f7;
+    --fondo: #FEFEFE;
+    --gris: #CCCCCC;
+    --oscuro: #3c3c3c;
+    --dark: #272727;
+    --negro: #181818;
+    --naranja: #FF8E00;
+    --amarillo: #FFE500;
 }
 
 * {
@@ -47,23 +43,22 @@ a {
     display: grid;
     grid-template-columns: minmax(70px, 70px) auto;
     grid-template-rows: 50px auto;
-    grid-template-areas: "header header"
-                         "menu contenido";
+    grid-template-areas: "header header" "menu contenido";
     transition: .3s all ease;
 }
 
 .contenedor.activo {
-    grid-template-columns: minmax(270px, 15%)  auto;
+    grid-template-columns: minmax(270px, 15%) auto;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
 
 /* ----- header pefildev ----- */
 
-.header{
+.header {
     grid-area: header;
     padding: 0 20px;
     display: grid;
@@ -93,6 +88,7 @@ a {
     margin-right: 20px;
     transition: .3s all ease;
 }
+
 .header .contenedor-logo .boton-menu:hover {
     background: var(--ligth);
 }
@@ -104,7 +100,7 @@ a {
     justify-content: center;
 }
 
-.header .barra-busqueda input{
+.header .barra-busqueda input {
     min-width: 60%;
     padding: 0 10px;
     height: 30px;
@@ -154,6 +150,23 @@ a {
     background: var(--ligth);
 }
 
+.header .botones-header .icono-social {
+    background: none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    padding: 7px 9px;
+    border-radius: 100px;
+    color: var(--dark);
+    margin-right: 0.938rem;
+    text-decoration: none;
+}
+
+.header .botones-header .icono-social:hover {
+    background: var(--ligth);
+}
+
 .header .botones-header .avatar {
     width: 30px;
     height: 30px;
@@ -166,7 +179,9 @@ a {
     border-radius: 100px;
 }
 
+
 /* ----- end header pefildev ----- */
+
 
 /* ----- menu pefildev ----- */
 
@@ -209,7 +224,9 @@ a {
     border: 1px solid var(--ligth);
 }
 
+
 /* ----- end menu pefildev ----- */
+
 
 /* ----- end contenido pefildev ----- */
 
@@ -234,6 +251,13 @@ a {
 
 .main .hero-perfildev .hero img {
     width: 100%;
+    display: block;
+}
+
+.main .hero-perfildev .hero .titulo-hero {
+    font-size: 2.9rem;
+    font-weight: 800;
+    line-height: 3rem;
 }
 
 .main .grid-plantillas {
@@ -253,6 +277,7 @@ a {
 
 
 /* ----- end contenido pefildev ----- */
+
 
 /* ------- botones perfildev ------- */
 
@@ -291,86 +316,117 @@ a {
     background: var(--primario);
 }
 
+
 /* ------- fin botones perfildev ------- */
+
 
 /* ------- paddings - margin perfildev ------- */
 
 .pt-1 {
     padding-top: 1em;
 }
+
 .pt-2 {
     padding-top: 2em;
 }
+
 .pt-3 {
     padding-top: 3em;
 }
+
 .pt-4 {
     padding-top: 4em;
 }
+
 .pt-5 {
     padding-top: 5em;
 }
+
 
 /* marging */
 
 .mt-1 {
     margin-top: 1em;
 }
-.mt-2 {
+
+.mt-2 { 
     margin-top: 2em;
 }
+
 .mt-3 {
     margin-top: 3em;
 }
+
 .mt-4 {
     margin-top: 4em;
 }
+
 .mt-5 {
     margin-top: 5em;
 }
 
+
 /* ------- fin paddings - margin perfildev ------- */
 
-/* ------- dropdown perfildev ------- */
-
 .dropbtn {
-  border: none;
-  cursor: pointer;
+    background: none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    padding: 7px 9px;
+    border-radius: 100px;
+    color: var(--dark);
+    margin-right: 0.938rem;
+    text-decoration: none;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  z-index: 1;
-  border-radius: 0.3rem;
-  font-size:0.7rem;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 500;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: var(--dark);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
 
-.show {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--ligth)
+}
+
+
+/* ------- dropdown perfildev ------- */
+
 
 /* ------- end dropdown perfildev ------- */
+
 
 /* ------- mediaquery perfildev ------- */
 
 @media screen and (max-width: 1200px) {
-    .main .grid-plantillas{
+    .main .grid-plantillas {
         grid-template-columns: repeat(3, 1fr);
     }
     .header .barra-busqueda input {
@@ -379,7 +435,7 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-    .main .grid-plantillas{
+    .main .grid-plantillas {
         grid-template-columns: repeat(2, 1fr);
     }
     .header .barra-busqueda input {
@@ -391,19 +447,15 @@ a {
     .contenedor {
         grid-template-rows: auto;
     }
-
     .header {
         padding: 17px;
-        grid-template-columns:auto auto;
+        grid-template-columns: auto auto;
         justify-content: space-between;
-        grid-template-areas: "logo iconos"
-                             "busqueda busqueda";
+        grid-template-areas: "logo iconos" "busqueda busqueda";
     }
-
     .header .contenedor-logo .logo-pefildev span {
         display: inline;
     }
-
     .header .barra-busqueda input {
         min-width: auto;
         width: 100%;
@@ -411,16 +463,19 @@ a {
 }
 
 @media screen and (max-width: 576px) {
-    .main .grid-plantillas{
+    .main .grid-plantillas {
         grid-template-columns: 1fr;
     }
-
     .header .botones-header button {
         margin-right: 0.4rem;
     }
-
     .main .hero-perfildev {
         grid-template-columns: 1fr;
+    }
+
+    .main .hero-perfildev .hero .img {
+        grid-template-columns: 1fr;
+        display: block;
     }
 }
 
