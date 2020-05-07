@@ -1,4 +1,153 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.signin-perfildev {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: url(../img/bg-jobs-perfildev.svg) no-repeat center top;
+  background-size: cover;
+  height: 100vh; }
+
+.login-perfildev {
+  width: 320px;
+  height: 420px;
+  background: var(--ligth);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 0.3rem; }
+
+.login-perfildev .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px); }
+
+.login-perfildev h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-align: center;
+  display: block;
+  padding: 0 0 20px; }
+
+.login-perfildev label {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 0.6rem;
+  display: block; }
+
+.login-perfildev input {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.login-perfildev input[type="text"],
+.login-perfildev input[type="password"] {
+  border: none;
+  border: 1px solid var(--gris);
+  border-radius: 0.3rem;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  height: 40px;
+  padding: 0 10px; }
+
+.login-perfildev input[type="submit"] {
+  font-family: 'Poppins', sans-serif; }
+
+.login-perfildev a, span {
+  text-emphasis: none;
+  font-size: 0.69rem;
+  line-height: 20px; }
+
+.login-perfildev a:hover {
+  color: var(--primario); }
+
+.signup-perfildev {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: url(../img/bg-jobs-perfildev.svg) no-repeat center top;
+  background-size: cover;
+  height: 100vh; }
+
+.regitro-perfildev {
+  width: 420px;
+  height: 420px;
+  background: var(--ligth);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 0.3rem; }
+
+.regitro-perfildev .flex-signin {
+  display: flex;
+  flex-direction: row; }
+
+.regitro-perfildev .item-signin {
+  display: flex;
+  margin-right: 5px;
+  width: 50%; }
+
+.regitro-perfildev .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px); }
+
+.regitro-perfildev h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-align: center;
+  display: block;
+  padding: 0 0 20px; }
+
+.regitro-perfildev label {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 0.6rem;
+  display: block; }
+
+.regitro-perfildev input {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.regitro-perfildev input[type="text"],
+.regitro-perfildev input[type="password"] {
+  border: none;
+  border: 1px solid var(--gris);
+  border-radius: 0.3rem;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  height: 40px;
+  padding: 0 10px; }
+
+.regitro-perfildev input[type="submit"] {
+  font-family: 'Poppins', sans-serif; }
+
+.regitro-perfildev a, span {
+  text-emphasis: none;
+  font-size: 0.69rem;
+  line-height: 20px; }
+
+.regitro-perfildev a:hover {
+  color: var(--primario); }
+
 :root {
   --primario: #280144;
   --segundario: #2B0082;
@@ -69,6 +218,7 @@ a {
   width: 40px;
   height: 40px;
   margin-right: 20px;
+  outline: none;
   transition: .3s all ease; }
 
 .header .contenedor-logo .boton-menu:hover {
@@ -88,7 +238,8 @@ a {
   border: 1px solid var(--gris);
   border-radius: 0.3em 0em 0em 0.3em;
   font-size: 15px;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  outline: none; }
 
 .header .barra-busqueda button {
   height: 30px;
@@ -98,6 +249,7 @@ a {
   color: var(--dark);
   background: var(--ligth);
   padding: 0 25px;
+  outline: none;
   cursor: pointer;
   transition: .3s all ease; }
 
