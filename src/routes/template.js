@@ -65,19 +65,13 @@ router.get('/about', (req, res) => {
     res.render('template/about.hbs')
 })
 
-// perfiles
-
-router.get('/dev-web', (req, res) => {
-    res.render('template/dev-web.hbs')
-})
-
 // contacto
 
 router.get('/contact', (req, res) => {
     res.render('template/contact.hbs')
 })
 
-// politcas
+// politicas
 
 router.get('/politicas', (req, res) => {
     res.render('template/politicas.hbs')

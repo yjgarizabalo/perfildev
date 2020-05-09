@@ -9,7 +9,7 @@
 
 .regitro-perfildev {
     width: 420px;
-    height: 420px;
+    height: 470px;
     background: var(--ligth);
     top: 50%;
     left: 50%;
@@ -63,8 +63,15 @@
     margin-bottom: 20px;
 }
 
+
+.regitro-perfildev .checkbox input {
+    width: auto;
+    margin-bottom: 20px;
+}
+
 .regitro-perfildev input[type="text"],
-.regitro-perfildev input[type="password"]{
+.regitro-perfildev input[type="password"],
+.regitro-perfildev input[type="email"]{
     border: none;
     border: 1px solid var(--gris);
     border-radius: 0.3rem;
@@ -77,6 +84,13 @@
 
 .regitro-perfildev input[type="submit"]{
     font-family: 'Poppins', sans-serif;
+}
+
+.regitro-perfildev input[type="checkbox"]{
+    border: none;
+    height: 10px;
+    width: 10px;
+    outline: none;
 }
 
 .regitro-perfildev a, span {
