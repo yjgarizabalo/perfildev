@@ -1,6 +1,6 @@
 <div class="container p-4 mt-5">
     <div class="row">
-        {{#each links}}
+        {{#each template}}
         <div class="col-md-3">
             <div class="card text-center">
                 <div class="card-body">
@@ -11,16 +11,16 @@
                     </a>
                     <p class="m-2">{{description}}</p>
                     <p class="text-muted">{{timeago create_at}}</p>
-                    <a href="/links/delete/{{id}}" class="btn btn-danger">Eliminar</a>
-                    <a href="/links/edit/{{id}}" class="btn btn-secondary">Editar</a>
+                    <a href="/template/delete/{{id}}" class="btn btn-danger">Eliminar</a>
+                    <a href="/template/edit/{{id}}" class="btn btn-secondary">Editar</a>
                 </div>
             </div>
         </div>
         {{else}}
         <div class="col-md-4 mx-auto">
             <div class="card card-body text-center">
-                <p class="text-danger font-weight-bold">NO hay links guardados aun</p>
-                 <a href="/links/add" class="btn btn-success">Crear Uno</a>
+                <p class="text-danger font-weight-bold">NO hay template guardados aun</p>
+                 <a href="/template/add" class="btn btn-success">Crear Uno</a>
             </div>
         </div>
         {{/each}}
@@ -32,7 +32,7 @@
         <div class="col-md-4 mx-auto">
             <div class="card">
                 <div class="card-body">
-                    <form action="/links/add" method="POST">
+                    <form action="/template/add" method="POST">
                     <div class="form-group mb-3">
                         <input type="text" class="form-control" placeholder="titulo" name="title" autofocus>
                     </div>

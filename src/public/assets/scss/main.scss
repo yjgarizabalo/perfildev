@@ -15,6 +15,7 @@
     --blanco: #ffffff;
     --ligth: #f7f7f7;
     --fondo: #FEFEFE;
+    --contenedor: #f4f4f4;
     --gris: #CCCCCC;
     --oscuro: #3c3c3c;
     --dark: #272727;
@@ -239,7 +240,7 @@ a {
 
 .main {
     grid-area: contenido;
-    background: var(--fondo);
+    background: var(--contenedor);
     padding: 20px;
 }
 
@@ -386,6 +387,7 @@ a {
     color: var(--dark);
     margin-right: 0.938rem;
     text-decoration: none;
+    outline: none;
 }
 
 .dropdown {
@@ -394,6 +396,19 @@ a {
 }
 
 .dropdown-content {
+    left: -120px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.dropdown-content-profile {
+    
     display: none;
     position: absolute;
     background-color: #f1f1f1;
