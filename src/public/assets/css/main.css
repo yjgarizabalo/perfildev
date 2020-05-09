@@ -471,7 +471,7 @@ a {
   display: inline-block; }
 
 .dropdown-content {
-  left: -100px;
+  left: -120px;
   display: none;
   position: absolute;
   background-color: #f1f1f1;

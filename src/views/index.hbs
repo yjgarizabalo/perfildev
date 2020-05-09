@@ -3,7 +3,7 @@
     <header class="header">
         <div class="contenedor-logo">
             <button id="boton-menu" class="boton-menu"><i class="fas fa-bars"></i></button>
-            <a href="/" class="logo-pefildev"><img src="/assets/img//perfildev-logo-dark.svg" width="100"
+            <a href="/" class="logo-pefildev"><img src="/assets/img/perfildev-logo-dark.svg" width="100"
                     alt="logo-pefildev"></a>
         </div>
 
@@ -17,9 +17,26 @@
         <div class="botones-header">
             {{#if user}}
             <div class="dropdown">
-                <button href="/" class="dropbtn"><i class="fas fa-user-astronaut"></i></button>
+                <button href="/" class="dropbtn"><i class="fas fa-th"></i></button>
                 <div class="dropdown-content">
-                    <a class="nav-link" href="/profile" alt="usuario">{{user.nombre}}</a>
+                    <a href="/">Hola! Amigos</a>
+                    <a href="/">¿Qué es perfildev?</a>
+                    <a href="https://www.instagram.com/perfildev_" title="instagram-perfildev"><i
+                            class="fab fa-instagram" alt="instagram-perfildev"></i>
+                        @Perfildev_</a>
+                    <a href="https://twitter.com/pefildev" title="twitter-perfildev"><i class="fab fa-twitter"
+                            alt="twitter-perfildev"></i>
+                        @Perfildev</a>
+                    <a href="/">Contacto</a>
+                </div>
+            </div>
+
+            <a class="icono-social" href="https://github.com/perfildev/perfildev" title="github-perfildev"><i class="fab fa-github" alt="github-perfildev"></i></a>
+            
+            <div class="dropdown"  style="float:right">
+                <a href="/" class="avatar"><img src="/assets/img/pp-perfildev.jpg" alt="avatar"></a> 
+                <div class="dropdown-content">
+                    <a class="nav-link" href="/profile" alt="usuario">¡Hola! {{user.nombre}}</a>
                     <a class="nav-link" href="/profile" alt="pefil">Perfil</a>
                     <a class="nav-link" href="/logout" alt="cerrar sesión">Cerrar sesión</a>
                 </div>

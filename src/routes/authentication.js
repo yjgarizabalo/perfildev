@@ -9,7 +9,7 @@ router.get('/signup',  isNotloggedin, (req, res) => {
 })
 
 router.post('/signup', isNotloggedin, passport.authenticate('local.signup', {
-    successRedirect: '/profile',
+    successRedirect: '/',
     failureRedirect: '/signup',
     failureFlash: true
 }))
@@ -20,7 +20,7 @@ router.get('/signin', isNotloggedin, (req, res) => {
 
 router.post('/signin', isNotloggedin,  (req, res) => {
     passport.authenticate('local.signin', {
-        successRedirect: '/profile',
+        successRedirect: '/',
         failureRedirect: '/signin',
         failureFlash: true
     })(req, res);
