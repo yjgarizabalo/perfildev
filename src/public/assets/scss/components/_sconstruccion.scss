@@ -1,0 +1,28 @@
+// sitio en construccion
+
+.sc-contenedor {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: var(--negro);
+    background-image: url(../img/error404.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.sc-item {
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.sc-item .sc-icon {
+    font-size: 5rem;
+}
+
+.sc-item .sc-title {
+  color: var(--amarillo);
+}
