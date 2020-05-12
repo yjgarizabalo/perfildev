@@ -2,15 +2,15 @@
     <!-- header perfildev -->
     <header class="header">
         <div class="contenedor-logo">
-            <button id="boton-menu" class="boton-menu"><i class="fas fa-bars"></i></button>
-            <a href="/" class="logo-pefildev"><img src="/assets/img/perfildev-logo-dark.svg" width="100"
-                    alt="logo-pefildev"></a>
+            <button id="boton-menu" title="menu" class="boton-menu"><i class="fas fa-bars"></i></button>
+            <a href="/" class="logo-pefildev"><img src="/assets/img/perfildev-logo-dark.svg" width="100" alt="perfildev"
+                    title="pefildev"></a>
         </div>
 
         {{!-- barra de busqueda perfildev --}}
         <div class="barra-busqueda">
-            <input type="text" placeholder="¿Qué Profesión eres?">
-            <button type="submit"><i class="fas fa-search"></i></button>
+            <input type="text" title="Busca tu profesión" placeholder="¿Qué Profesión eres?">
+            <button type="submit" title="buscar"><i class="fas fa-search"></i></button>
         </div>
         {{!-- end barra de busqueda perfildev --}} {{!-- barra de navegación perfildev --}}
 
@@ -20,14 +20,12 @@
                 <button href="/" class="dropbtn"><i class="fas fa-th"></i></button>
                 <div class="dropdown-content">
                     <a href="/template/about">¿Qué es perfildev?</a>
-                    <a href="https://github.com/perfildev/perfildev" title="github-perfildev"><i class="fab fa-github"
-                            alt="github-perfildev"></i> Perfildev</a>
+                    <a href="https://github.com/perfildev/perfildev" title="github-perfildev"><i
+                            class="fab fa-github"></i> Perfildev</a>
                     <a href="https://www.instagram.com/perfildev_" title="instagram-perfildev"><i
-                            class="fab fa-instagram" alt="instagram-perfildev"></i>
-                        @Perfildev_</a>
-                    <a href="https://twitter.com/pefildev" title="twitter-perfildev"><i class="fab fa-twitter"
-                            alt="twitter-perfildev"></i>
-                        @Perfildev</a>
+                            class="fab fa-instagram"></i> @Perfildev_</a>
+                    <a href="https://twitter.com/pefildev" title="twitter-perfildev"><i
+                            class="fab fa-twitter"></i>@Perfildev</a>
                     <a href="/template/contact">Contacto</a>
                 </div>
             </div>
@@ -37,9 +35,9 @@
             <div class="dropdown">
                 <a href="/" class="avatar"><img src="/assets/img/pp-perfildev.jpg" alt="avatar"></a>
                 <div class="dropdown-content">
-                    <a class="nav-link" href="/profile" alt="usuario">¡Hola! {{user.nombre}}</a>
-                    <a class="nav-link" href="/profile" alt="pefil">Perfil</a>
-                    <a class="nav-link" href="/logout" alt="cerrar sesión">Cerrar sesión</a>
+                    <a class="nav-link" title="Hola amigo" href="/profile" alt="usuario">¡Hola! {{user.nombre}}</a>
+                    <a class="nav-link" title="tu perfil" href="/profile" alt="pefil">Perfil</a>
+                    <a class="nav-link" title="cerrar sisón" href="/logout" alt="cerrar sesión">Cerrar sesión</a>
                 </div>
             </div>
             {{else}}
@@ -48,16 +46,15 @@
                 <div class="dropdown-content">
                     <a href="/template/about">¿Qué es perfildev?</a>
                     <a href="https://www.instagram.com/perfildev_" title="instagram-perfildev"><i
-                            class="fab fa-instagram" alt="instagram-perfildev"></i>
+                            class="fab fa-instagram"></i>
                         @Perfildev_</a>
-                    <a href="https://twitter.com/pefildev" title="twitter-perfildev"><i class="fab fa-twitter"
-                            alt="twitter-perfildev"></i>
+                    <a href="https://twitter.com/pefildev" title="twitter-perfildev"><i class="fab fa-twitter"></i>
                         @Perfildev</a>
                     <a href="/template/contact">Contacto</a>
                 </div>
             </div>
             <a class="icono-social" href="https://github.com/perfildev/perfildev" title="github-perfildev"> <i
-                    class="fab fa-github" alt="github-perfildev"></i></a>
+                    class="fab fa-github"></i></a>
             <a href="/signin" class="btn-secundario">Acceder</a>
             {{/if}}
         </div>
