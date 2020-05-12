@@ -430,7 +430,7 @@ a {
   background: transparent;
   border: 1px solid var(--primario);
   border-radius: 0.3em;
-  padding: 0.5em 1.1em;
+  padding: 0.5em 0.8em;
   color: var(--primario);
   cursor: pointer;
   transition: .3s ease all;
