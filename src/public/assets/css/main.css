@@ -288,6 +288,34 @@ a {
   cursor: pointer;
   transition: .3s all ease; }
 
+.buscador {
+  position: relative; }
+
+#searchList {
+  background: var(--fondo);
+  max-height: 0;
+  transition: max-height .2s ease;
+  position: absolute;
+  top: 100%;
+  min-width: 67%;
+  z-index: 1; }
+
+#searchList.is-visible {
+  max-height: 500px;
+  overflow-y: auto; }
+
+#searchList .list-group-item {
+  padding: 0.75rem 0.5rem;
+  border: none; }
+
+#searchList .list-item {
+  padding: 0.75rem 1rem;
+  border: none; }
+
+#searchList .list-group-item:hover {
+  background-color: var(--ligth);
+  color: var(--oscuro); }
+
 .header .barra-busqueda button:hover {
   background: var(--gris); }
 
@@ -536,13 +564,17 @@ a {
   .main .grid-plantillas {
     grid-template-columns: repeat(3, 1fr); }
   .header .barra-busqueda input {
-    min-width: 70%; } }
+    min-width: 70%; }
+  #searchList {
+    min-width: 80%; } }
 
 @media screen and (max-width: 992px) {
   .main .grid-plantillas {
     grid-template-columns: repeat(2, 1fr); }
   .header .barra-busqueda input {
-    min-width: 70%; } }
+    min-width: 70%; }
+  #searchList {
+    min-width: 83%; } }
 
 @media screen and (max-width: 768px) {
   .contenedor {
@@ -555,6 +587,9 @@ a {
   .header .contenedor-logo .logo-pefildev span {
     display: inline; }
   .header .barra-busqueda input {
+    min-width: auto;
+    width: 100%; }
+  #searchList {
     min-width: auto;
     width: 100%; } }
 
