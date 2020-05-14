@@ -1,155 +1,120 @@
 <div class="contenedor activo" id="contenedor">
-        <!-- header perfildev -->
-        <header class="header">
-                <div class="contenedor-logo">
-                        <button id="boton-menu" title="menu" class="boton-menu"><i class="fas fa-bars"></i></button>
-                        <a href="/" class="logo-pefildev"><img src="/assets/img/perfildev-logo-dark.svg" width="100"
-                                        alt="perfildev" title="pefildev"></a>
-                </div>
+  <!-- header perfildev -->
+  <header class="header">
+    <div class="contenedor-logo">
+      <button id="boton-menu" title="menu" class="boton-menu"><i class="fas fa-bars"></i></button>
+      <a href="/" class="logo-pefildev"><img src="/assets/img/perfildev-logo-dark.svg" width="100" alt="perfildev" title="pefildev" /></a>
+    </div>
 
-                <!-- barra de busqueda perfildev -->
+    <!-- barra de busqueda perfildev -->
 
-                <div class="barra-busqueda buscador" id="bs1"></div>
+    <div class="barra-busqueda buscador" id="bs1"></div>
 
-                <!-- end barra de busqueda perfildev -->
+    <!-- end barra de busqueda perfildev -->
 
+    <!-- barra de navegación perfildev -->
 
-                <!-- barra de navegación perfildev -->
+    <div class="botones-header">
+      {{#if user}}
+      <div class="dropdown">
+        <button href="/" class="dropbtn" aria-label="Opciones"><i class="fas fa-th"></i></button>
+        <div class="dropdown-content">
+          <a href="/template/about">¿Qué es perfildev?</a>
+          <a href="https://github.com/perfildev/perfildev" title="github-perfildev"><i class="fab fa-github"></i> Perfildev</a>
+          <a href="https://www.instagram.com/perfildev_" title="instagram-perfildev"><i class="fab fa-instagram"></i> @Perfildev_</a>
+          <a href="https://twitter.com/pefildev" title="twitter-perfildev"><i class="fab fa-twitter"></i>@Perfildev</a>
+          <a href="/template/contact">Contacto</a>
+        </div>
+      </div>
 
-                <div class=" botones-header">
-                        {{#if user}}
-                        <div class="dropdown">
-                                <button href="/" class="dropbtn" aria-label="Opciones"><i
-                                                class="fas fa-th"></i></button>
-                                <div class="dropdown-content">
-                                        <a href="/template/about">¿Qué es perfildev?</a>
-                                        <a href="https://github.com/perfildev/perfildev" title="github-perfildev"><i
-                                                        class="fab fa-github"></i>
-                                                Perfildev</a>
-                                        <a href="https://www.instagram.com/perfildev_" title="instagram-perfildev"><i
-                                                        class="fab fa-instagram"></i>
-                                                @Perfildev_</a>
-                                        <a href="https://twitter.com/pefildev" title="twitter-perfildev"><i
-                                                        class="fab fa-twitter"></i>@Perfildev</a>
-                                        <a href="/template/contact">Contacto</a>
-                                </div>
-                        </div>
+      <button><i class="fas fa-bell"></i></button>
 
-                        <button><i class="fas fa-bell"></i></button>
+      <div class="dropdown">
+        <a href="/" class="avatar"><img src="/assets/img/pp-perfildev.jpg" alt="avatar" /></a>
+        <div class="dropdown-content">
+          <a class="nav-link" title="Hola amigo" href="/profile" alt="usuario">¡Hola! {{ user.nombre }}</a>
+          <a class="nav-link" title="tu perfil" href="/profile" alt="pefil">Perfil</a>
+          <a class="nav-link" title="cerrar sisón" href="/logout" alt="cerrar sesión">Cerrar sesión</a>
+        </div>
+      </div>
+      {{else}}
+      <div class="dropdown">
+        <button href="/" class="dropbtn" aria-label="Opciones"><i class="fas fa-th"></i></button>
+        <div class="dropdown-content">
+          <a href="/template/about">¿Qué es perfildev?</a>
+          <a href="https://www.instagram.com/perfildev_" title="instagram-perfildev"><i class="fab fa-instagram"></i> @Perfildev_</a>
+          <a href="https://twitter.com/pefildev" title="twitter-perfildev"><i class="fab fa-twitter"></i> @Perfildev</a>
+          <a href="/template/contact">Contacto</a>
+        </div>
+      </div>
+      <a class="icono-social" href="https://github.com/perfildev/perfildev" title="github-perfildev"> <i class="fab fa-github"></i></a>
+      <a href="/signin" class="btn-secundario">Acceder</a>
+      {{/if}}
+    </div>
+    <!-- end barra de navegacón perfildev -->
+  </header>
+  <!-- end header perfildev -->
+  <!-- menu lateral perfildev -->
 
-                        <div class="dropdown">
-                                <a href="/" class="avatar"><img src="/assets/img/pp-perfildev.jpg" alt="avatar"></a>
-                                <div class="dropdown-content">
-                                        <a class="nav-link" title="Hola amigo" href="/profile" alt="usuario">¡Hola!
-                                                {{user.nombre}}</a>
-                                        <a class="nav-link" title="tu perfil" href="/profile" alt="pefil">Perfil</a>
-                                        <a class="nav-link" title="cerrar sisón" href="/logout"
-                                                alt="cerrar sesión">Cerrar sesión</a>
-                                </div>
-                        </div>
-                        {{else}}
-                        <div class="dropdown">
-                                <button href="/" class="dropbtn" aria-label="Opciones"><i
-                                                class="fas fa-th"></i></button>
-                                <div class="dropdown-content">
-                                        <a href="/template/about">¿Qué es perfildev?</a>
-                                        <a href="https://www.instagram.com/perfildev_" title="instagram-perfildev"><i
-                                                        class="fab fa-instagram"></i>
-                                                @Perfildev_</a>
-                                        <a href="https://twitter.com/pefildev" title="twitter-perfildev"><i
-                                                        class="fab fa-twitter"></i>
-                                                @Perfildev</a>
-                                        <a href="/template/contact">Contacto</a>
-                                </div>
-                        </div>
-                        <a class="icono-social" href="https://github.com/perfildev/perfildev" title="github-perfildev">
-                                <i class="fab fa-github"></i></a>
-                        <a href="/signin" class="btn-secundario">Acceder</a>
-                        {{/if}}
-                </div>
-                <!-- end barra de navegacón perfildev -->
-        </header>
-        <!-- end header perfildev -->
-        <!-- menu lateral perfildev -->
+  <nav class="menu-lateral">
+    <a href="/signin" class="activo"><i class="fas">🚀</i> Pagina Principal</a>
+    <a href="/signin"><i class="fas fa-star"></i> Pagina Principal</a>
+    <a href="/signin"><i class="fas fa-star"></i> Pagina Principal</a>
 
-        <nav class="menu-lateral">
-                <a href="/signin" class="activo"><i class="fas">🚀</i> Pagina Principal</a>
-                <a href="/signin"><i class="fas fa-star"></i> Pagina Principal</a>
-                <a href="/signin"><i class="fas fa-star"></i> Pagina Principal</a>
+    <hr />
 
-                <hr>
+    <a href="/signin"><i class="fas">👩‍💼</i> Ingeniero de sistemas</a>
+    <a href="/signin"><i class="fas">🖥️</i> Tec. de mantienimento pc</a>
+    <a href="/signin"><i class="fas">🧙‍♂️</i> Analista de sistemas</a>
 
-                <a href="/signin"><i class="fas">👩‍💼</i> Ingeniero de sistemas</a>
-                <a href="/signin"><i class="fas">🖥️</i> Tec. de mantienimento pc</a>
-                <a href="/signin"><i class="fas">🧙‍♂️</i> Analista de sistemas</a>
+    <hr />
 
-                <hr>
+    <a href="/signin"><i class="fas">👨‍💻</i> programador web</a>
+    <a href="/signin"><i class="fas">👨‍💻</i> Back-end</a>
+    <a href="/signin"><i class="fas">👨‍💻</i> Front-end</a>
 
-                <a href="/signin"><i class="fas">👨‍💻</i> programador web</a>
-                <a href="/signin"><i class="fas">👨‍💻</i> Back-end</a>
-                <a href="/signin"><i class="fas">👨‍💻</i> Front-end</a>
+    <hr />
 
-                <hr>
-
-                <a href="/signin"><i class="fas">👨‍🎨</i> Diseñador grafico</a>
-                <a href="/signin"><i class="fas">🦸‍♂️</i> UI / UX</a>
-                <a href="/signin"><i class="fas">📸</i> Fotografo</a>
-        </nav>
-        <!-- header perfildev -->
-        <main class="main">
-                <div class="hero-perfildev">
-                        <div class="hero">
-                                <h1 class="titulo-hero">Hola Amigos 👋</h1>
-                                <div class="mt-1">
-                                        <p>Insistimos que en la mayoría de casos hay que darle <b>un giro de 360° a la
-                                                        apariencia de nuestra la hoja de vida (currículum vítae)</b>, ya
-                                                que por lo general usamos
-                                                plantillas hechas por personas aburridas y poco creativa. Perfildev
-                                                busca inspirarte para
-                                                cambiar esa historia.</p>
-                                </div>
-                                <div class="mt-2">
-                                        <a href="/" class="btn-primario">Empezar 💪</a>
-                                </div>
-                        </div>
-                        <div class="hero">
-                                <img class="text-center" src="/assets/img/perfildev-about.svg" alt="perfildev-hero"
-                                        srcset="">
-                        </div>
-                </div>
-                <div class="grid-plantillas">
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                        <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev"
-                                        alt="plantillas-perfildev"></a>
-                </div>
-        </main>
+    <a href="/signin"><i class="fas">👨‍🎨</i> Diseñador grafico</a>
+    <a href="/signin"><i class="fas">🦸‍♂️</i> UI / UX</a>
+    <a href="/signin"><i class="fas">📸</i> Fotografo</a>
+  </nav>
+  <!-- header perfildev -->
+  <main class="main">
+    <div class="hero-perfildev">
+      <div class="hero">
+        <h1 class="titulo-hero">Hola Amigos 👋</h1>
+        <div class="mt-1">
+          <p>
+            Insistimos que en la mayoría de casos hay que darle <b>un giro de 360° a la apariencia de nuestra la hoja de vida (currículum vítae)</b>, ya que por lo general usamos plantillas hechas por
+            personas aburridas y poco creativa. Perfildev busca inspirarte para cambiar esa historia.
+          </p>
+        </div>
+        <div class="mt-2">
+          <a href="/" class="btn-primario">Empezar 💪</a>
+        </div>
+      </div>
+      <div class="hero">
+        <img class="text-center" src="/assets/img/perfildev-about.svg" alt="perfildev-hero" srcset="" />
+      </div>
+    </div>
+    <div class="grid-plantillas">
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+      <a href="/" class="plantillas"><img src="https://via.placeholder.com/500x281?text=Perfildev" alt="plantillas-perfildev" /></a>
+    </div>
+  </main>
 </div>
