@@ -1,6 +1,6 @@
 <!-- contacto perfildev -->
 
-<section class="hero-contact bg-dark">
+{{!-- <section class="hero-contact bg-dark">
     <div class="container">
         <div class="row vh-100">
             <div class="col-sm-6 align-self-center text-white">
@@ -57,6 +57,45 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
+
+<div class="contact-perfildev">
+    <div class="contact-c-perfildev">
+        <a href="/"><img class="avatar" title="Ir al inicio" src="/assets/img/pp-perfildev.jpg" alt="avatar-perfildev"></a>
+        <h3>Contacto 📮</h3>
+        <!-- formulario  de contacto perfildev -->
+        <form action="/contact" method="POST">
+
+            <div class="flex-contact">
+                <div class="item-contact">
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" placeholder="Nombre" name="nombre">
+                    </div>
+                </div>
+                <div class="item-contact">
+                    <div>
+                        <label for="Apellidos">Apellido</label>
+                        <input type="text" placeholder="Apellidos" name="apellido">
+                    </div>
+                </div>
+            </div>
+            <label for="username">Correo Electronico</label>
+
+            <input type="email" placeholder="Correo Electronico" name="email">
+
+
+            <label for="mensaje">Mensaje</label>
+            <div class="flex-contact">
+                <div class="item-contact-m">
+                    <textarea rows="4" cols="60" name="mensaje">Escribe tu mensaje...✏️</textarea>
+                </div>
+            </div>
+
+            <input class="btn-primario" type="submit" value="Enviar">
+
+        </form>
+    </div>
+</div>
 
 <!-- end contacto perfildev -->
