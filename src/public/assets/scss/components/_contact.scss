@@ -1,0 +1,111 @@
+// contact
+.contact-perfildev {
+    padding: 0;
+    margin: 0;
+    background: var(--primario);
+    background-image: url(../img/error404.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contact-c-perfildev {
+    width: 420px;
+    height: 470px;
+    background: var(--ligth);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 0.3rem;
+}
+
+.contact-c-perfildev .flex-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-c-perfildev .item-contact {
+    display: flex;
+    margin-right: 5px;
+    width: 50%;
+}
+
+.contact-c-perfildev .item-contact-m {
+    display: flex;
+    width: 100%;
+}
+
+.contact-c-perfildev .avatar {
+    width: 100px;
+    height: 100px;
+    border: 1.5px solid var(--amarillo);
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.contact-c-perfildev h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: center;
+    display: block;
+    padding: 0 0 20px;
+}
+
+.contact-c-perfildev label {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 0.6rem;
+    display: block;
+}
+
+.contact-c-perfildev input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.contact-c-perfildev .checkbox input {
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.contact-c-perfildev textarea {
+    margin-bottom: 20px;
+}
+
+.contact-c-perfildev textarea {
+    border: none;
+    border: 1px solid var(--gris);
+    border-radius: 0.3rem;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 0.7rem;
+    width: auto;
+}
+
+.contact-c-perfildev input[type="text"],
+.contact-c-perfildev input[type="email"]{
+    border: none;
+    border: 1px solid var(--gris);
+    border-radius: 0.3rem;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.contact-c-perfildev input[type="submit"]{
+    font-family: 'Poppins', sans-serif;
+}

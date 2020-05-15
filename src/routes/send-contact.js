@@ -4,13 +4,14 @@ const nodemailer = require('nodemailer')
 
 const router = Router()
 
-router.post('/contact', async(req, res) => {
-    const { nombre, email, mensaje } = req.body
+router.post('/contact', async (req, res) => {
+    const { nombre, apellido, email, mensaje } = req.body
 
     contentHTML = `
        <h1>Informacion de usuario</h1>
        <ul>
-          <li>Nombre y Apellido: ${nombre}<li>
+          <li>Nombre: ${nombre}</li>
+          <li>Apellido: ${apellido}</li>
           <li>Email: ${email}</li>
           <li>Mensaje: ${mensaje}</li>
        </ul>
@@ -20,8 +21,8 @@ router.post('/contact', async(req, res) => {
         port: 465,
         secure: true,
         auth: {
-           user: 'contacto@kingdomplus.org',
-           pass: 'kingdomplus2018'
+            user: 'contacto@kingdomplus.org',
+            pass: 'kingdomplus2018'
         },
         tls: {
             rejectUnauthorized: false
