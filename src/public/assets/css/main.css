@@ -600,6 +600,7 @@ a {
   margin-top: 5em; }
 
 /* ------- fin paddings - margin perfildev ------- */
+/* ------- dropdown perfildev ------- */
 .dropbtn {
   background: none;
   border: none;
@@ -653,8 +654,80 @@ a {
 .dropdown:hover .dropbtn {
   background-color: var(--ligth); }
 
-/* ------- dropdown perfildev ------- */
 /* ------- end dropdown perfildev ------- */
+/* ------- card perfildev ------- */
+.propiedad-card-perfildev {
+  height: 17em;
+  width: 17em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 0.31em;
+  overflow: hidden; }
+
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+/* Top Half of card, image. */
+.propiedad-image-perfildev {
+  height: 8em;
+  width: 100%;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* Bottom Card Section */
+.propiedad-description {
+  background-color: #FAFAFC;
+  height: 10em;
+  width: auto;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center; }
+
+/* Social Icons */
+.propiedad-social-icons {
+  width: 1em;
+  height: 1em;
+  background-color: black;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+/* Property Cards Hover States */
+.propiedad-card-perfildev:hover .propiedad-description {
+  height: 0em;
+  padding: 0px 1em; }
+
+.propiedad-card-perfildev:hover .propiedad-image-perfildev {
+  height: 18em; }
+
+.propiedad-card-perfildev:hover .propiedad-social-icons {
+  background-color: white; }
+
+.propiedad-card-perfildev:hover .propiedad-social-icons:hover {
+  background-color: blue;
+  cursor: pointer; }
+
+/* ------- end card perfildev ------- */
 /* ------- mediaquery perfildev ------- */
 @media screen and (max-width: 1200px) {
   .main .grid-plantillas {

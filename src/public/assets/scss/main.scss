@@ -14,31 +14,31 @@
 // end vistas
 
 :root {
-    --primario: #280144;
+    --primario  : #280144;
     --segundario: #2B0082;
-    --blanco: #ffffff;
-    --ligth: #f7f7f7;
-    --fondo: #FEFEFE;
+    --blanco    : #ffffff;
+    --ligth     : #f7f7f7;
+    --fondo     : #FEFEFE;
     --contenedor: #f4f4f4;
-    --gris: #CCCCCC;
-    --oscuro: #3c3c3c;
-    --dark: #272727;
-    --negro: #181818;
-    --naranja: #FF8E00;
-    --amarillo: #FFE500;
+    --gris      : #CCCCCC;
+    --oscuro    : #3c3c3c;
+    --dark      : #272727;
+    --negro     : #181818;
+    --naranja   : #FF8E00;
+    --amarillo  : #FFE500;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
 
 body {
-    background: var(--fondo);
+    background : var(--fondo);
     font-family: 'Poppins', sans-serif;
-    font-size: 0.85em;
-    color: var(--dark);
+    font-size  : 0.85em;
+    color      : var(--dark);
 }
 
 a {
@@ -46,14 +46,14 @@ a {
 }
 
 .contenedor {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0 auto;
-    display: grid;
+    width                : 100%;
+    min-height           : 100vh;
+    margin               : 0 auto;
+    display              : grid;
     grid-template-columns: minmax(70px, 70px) auto;
-    grid-template-rows: 50px auto;
-    grid-template-areas: "header header" "menu contenido";
-    transition: .3s all ease;
+    grid-template-rows   : 50px auto;
+    grid-template-areas  : "header header""menu contenido";
+    transition           : .3s all ease;
 }
 
 .contenedor.activo {
@@ -68,35 +68,35 @@ a {
 /* ----- header pefildev ----- */
 
 .header {
-    grid-area: header;
-    padding: 0 20px;
-    display: grid;
+    grid-area            : header;
+    padding              : 0 20px;
+    display              : grid;
     grid-template-columns: auto 1fr auto;
-    background: var(--fondo);
-    align-items: center;
-    justify-content: space-between;
-    grid-gap: 30px;
-    grid-template-areas: "logo busqueda iconos";
+    background           : var(--fondo);
+    align-items          : center;
+    justify-content      : space-between;
+    grid-gap             : 30px;
+    grid-template-areas  : "logo busqueda iconos";
 }
 
 .header .contenedor-logo {
-    grid-area: logo;
-    display: flex;
+    grid-area  : logo;
+    display    : flex;
     align-items: center;
 }
 
 .header .contenedor-logo .boton-menu {
-    border: none;
-    padding: 10px;
-    background: none;
-    cursor: pointer;
-    font-size: 16px;
+    border       : none;
+    padding      : 10px;
+    background   : none;
+    cursor       : pointer;
+    font-size    : 16px;
     border-radius: 100px;
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-    outline: none;
-    transition: .3s all ease;
+    width        : 40px;
+    height       : 40px;
+    margin-right : 20px;
+    outline      : none;
+    transition   : .3s all ease;
 }
 
 .header .contenedor-logo .boton-menu:hover {
@@ -104,36 +104,36 @@ a {
 }
 
 .header .barra-busqueda {
-    grid-area: busqueda;
-    display: flex;
-    align-items: center;
+    grid-area      : busqueda;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
 }
 
 .header .barra-busqueda input {
-    min-width: 60%;
-    padding: 0 10px;
-    height: 30px;
-    line-height: 30px;
-    border: 1px solid var(--gris);
+    min-width    : 60%;
+    padding      : 0 10px;
+    height       : 30px;
+    line-height  : 30px;
+    border       : 1px solid var(--gris);
     border-radius: 0.3em 0em 0em 0.3em;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    outline: none;
+    font-size    : 15px;
+    font-family  : 'Poppins', sans-serif;
+    outline      : none;
 }
 
 
 .header .barra-busqueda button {
-    height: 30px;
-    border: 1px solid var(--gris);
+    height       : 30px;
+    border       : 1px solid var(--gris);
     border-radius: 0em 0.3em 0.3em 0em;
-    border-left: none;
-    color: var(--dark);
-    background: var(--ligth);
-    padding: 0 25px;
-    outline: none;
-    cursor: pointer;
-    transition: .3s all ease;
+    border-left  : none;
+    color        : var(--dark);
+    background   : var(--ligth);
+    padding      : 0 25px;
+    outline      : none;
+    cursor       : pointer;
+    transition   : .3s all ease;
 }
 
 .buscador {
@@ -144,10 +144,10 @@ a {
     background: var(--fondo);
     max-height: 0;
     transition: max-height .2s ease;
-    position: absolute;
-    top: 100%;
-    min-width: 67%;
-    z-index: 1;
+    position  : absolute;
+    top       : 100%;
+    min-width : 67%;
+    z-index   : 1;
 }
 
 #searchList.is-visible {
@@ -155,19 +155,19 @@ a {
     overflow-y: auto;
 }
 
-#searchList .list-group-item{
+#searchList .list-group-item {
     padding: 0.75rem 0.5rem;
-    border: none;
+    border : none;
 }
 
 #searchList .list-item {
     padding: 0.75rem 1rem;
-    border: none;
+    border : none;
 }
 
 #searchList .list-group-item:hover {
     background-color: var(--ligth);
-    color: var(--oscuro);
+    color           : var(--oscuro);
 }
 
 .header .barra-busqueda button:hover {
@@ -175,23 +175,23 @@ a {
 }
 
 .header .botones-header {
-    grid-area: iconos;
-    display: flex;
+    grid-area  : iconos;
+    display    : flex;
     align-items: center;
 }
 
 .header .botones-header button {
-    background: none;
-    border: none;
-    width: 35px;
-    height: 35px;
-    font-size: 15px;
-    padding: 7px 9px;
+    background   : none;
+    border       : none;
+    width        : 35px;
+    height       : 35px;
+    font-size    : 15px;
+    padding      : 7px 9px;
     border-radius: 100px;
-    color: var(--dark);
-    margin-right: 0.938rem;
-    cursor: pointer;
-    outline: none;
+    color        : var(--dark);
+    margin-right : 0.938rem;
+    cursor       : pointer;
+    outline      : none;
 }
 
 .header .botones-header button:hover {
@@ -199,15 +199,15 @@ a {
 }
 
 .header .botones-header .icono-social {
-    background: none;
-    border: none;
-    width: 35px;
-    height: 35px;
-    font-size: 15px;
-    padding: 7px 9px;
-    border-radius: 100px;
-    color: var(--dark);
-    margin-right: 0.5rem;
+    background     : none;
+    border         : none;
+    width          : 35px;
+    height         : 35px;
+    font-size      : 15px;
+    padding        : 7px 9px;
+    border-radius  : 100px;
+    color          : var(--dark);
+    margin-right   : 0.5rem;
     text-decoration: none;
 }
 
@@ -216,15 +216,15 @@ a {
 }
 
 .header .botones-header .avatar {
-    width: 30px;
-    height: 30px;
+    width  : 30px;
+    height : 30px;
     display: inline-block;
 }
 
 .header .botones-header .avatar img {
     vertical-align: top;
-    width: 100%;
-    border-radius: 100px;
+    width         : 100%;
+    border-radius : 100px;
 }
 
 
@@ -234,15 +234,15 @@ a {
 /* ----- menu pefildev ----- */
 
 .menu-lateral {
-    grid-area: menu;
+    grid-area : menu;
     background: var(--blanco);
-    overflow: hidden;
+    overflow  : hidden;
 }
 
 .menu-lateral a {
-    display: block;
-    padding: 15px 25px;
-    color: var(--dark);
+    display  : block;
+    padding  : 15px 25px;
+    color    : var(--dark);
     min-width: 800px;
     font-size: 12px;
 }
@@ -252,14 +252,14 @@ a {
 }
 
 .menu-lateral a.activo {
-    background: var(--ligth);
+    background : var(--ligth);
     font-weight: 600;
 }
 
 .menu-lateral .fas {
     margin-right: 37px;
-    width: 20px;
-    text-align: center;
+    width       : 20px;
+    text-align  : center;
 }
 
 .menu-lateral a.activo .fas {
@@ -278,43 +278,43 @@ a {
 /* ----- end contenido pefildev ----- */
 
 .main {
-    grid-area: contenido;
+    grid-area : contenido;
     background: var(--contenedor);
-    padding: 20px;
+    padding   : 20px;
 }
 
 .main .hero-perfildev {
-    display: grid;
+    display              : grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 30px;
-    min-height: 17rem;
-    align-items: center;
+    padding-bottom       : 30px;
+    min-height           : 17rem;
+    align-items          : center;
 }
 
 .main .hero-perfildev .hero {
-    width: 100%;
+    width  : 100%;
     display: block;
 }
 
 .main .hero-perfildev .hero img {
-    width: 100%;
+    width  : 100%;
     display: block;
 }
 
 .main .hero-perfildev .hero .titulo-hero {
-    font-size: 2.9rem;
+    font-size  : 2.9rem;
     font-weight: 800;
     line-height: 3rem;
 }
 
 .main .grid-plantillas {
-    display: grid;
-    grid-gap: 15px 20px;
+    display              : grid;
+    grid-gap             : 15px 20px;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .main .grid-plantillas .plantillas {
-    width: 100%;
+    width  : 100%;
     display: block;
 }
 
@@ -329,16 +329,16 @@ a {
 /* ------- botones perfildev ------- */
 
 .btn-primario {
-    background: var(--primario);
-    border: none;
-    border-radius: 0.31em;
-    padding: 0.8em 1.4em;
-    color: var(--blanco);
-    cursor: pointer;
-    transition: .3s ease all;
-    font-size: 1em;
+    background     : var(--primario);
+    border         : none;
+    border-radius  : 0.31em;
+    padding        : 0.8em 1.4em;
+    color          : var(--blanco);
+    cursor         : pointer;
+    transition     : .3s ease all;
+    font-size      : 1em;
     text-decoration: none;
-    font-weight: 600;
+    font-weight    : 600;
 }
 
 .btn-primario:hover {
@@ -346,20 +346,20 @@ a {
 }
 
 .btn-secundario {
-    background: transparent;
-    border: 1px solid var(--primario);
-    border-radius: 0.3em;
-    padding: 0.5em 0.8em;
-    color: var(--primario);
-    cursor: pointer;
-    transition: .3s ease all;
-    font-size: 1em;
+    background     : transparent;
+    border         : 1px solid var(--primario);
+    border-radius  : 0.3em;
+    padding        : 0.5em 0.8em;
+    color          : var(--primario);
+    cursor         : pointer;
+    transition     : .3s ease all;
+    font-size      : 1em;
     text-decoration: none;
-    font-weight: 500;
+    font-weight    : 500;
 }
 
 .btn-secundario:hover {
-    color: var(--blanco);
+    color     : var(--blanco);
     background: var(--primario);
 }
 
@@ -396,7 +396,7 @@ a {
     margin-top: 1em;
 }
 
-.mt-2 { 
+.mt-2 {
     margin-top: 2em;
 }
 
@@ -415,54 +415,58 @@ a {
 
 /* ------- fin paddings - margin perfildev ------- */
 
+
+
+/* ------- dropdown perfildev ------- */
+
 .dropbtn {
-    background: none;
-    border: none;
-    width: 35px;
-    height: 35px;
-    font-size: 15px;
-    padding: 7px 9px;
-    border-radius: 100px;
-    color: var(--dark);
-    margin-right: 0.938rem;
+    background     : none;
+    border         : none;
+    width          : 35px;
+    height         : 35px;
+    font-size      : 15px;
+    padding        : 7px 9px;
+    border-radius  : 100px;
+    color          : var(--dark);
+    margin-right   : 0.938rem;
     text-decoration: none;
-    outline: none;
+    outline        : none;
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display : inline-block;
 }
 
 .dropdown-content {
-    left: -120px;
-    display: none;
-    position: absolute;
+    left            : -120px;
+    display         : none;
+    position        : absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
-    z-index: 1;
-    border-radius: 0.3rem;
-    font-size: 0.7rem;
-    font-weight: 500;
+    min-width       : 160px;
+    z-index         : 1;
+    border-radius   : 0.3rem;
+    font-size       : 0.7rem;
+    font-weight     : 500;
 }
 
 .dropdown-content-profile {
-    
-    display: none;
-    position: absolute;
+
+    display         : none;
+    position        : absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
-    z-index: 1;
-    border-radius: 0.3rem;
-    font-size: 0.7rem;
-    font-weight: 500;
+    min-width       : 160px;
+    z-index         : 1;
+    border-radius   : 0.3rem;
+    font-size       : 0.7rem;
+    font-weight     : 500;
 }
 
 .dropdown-content a {
-    color: var(--dark);
-    padding: 12px 16px;
+    color          : var(--dark);
+    padding        : 12px 16px;
     text-decoration: none;
-    display: block;
+    display        : block;
 }
 
 .dropdown-content a:hover {
@@ -477,11 +481,96 @@ a {
     background-color: var(--ligth)
 }
 
-
-/* ------- dropdown perfildev ------- */
-
-
 /* ------- end dropdown perfildev ------- */
+
+/* ------- card perfildev ------- */
+
+.propiedad-card-perfildev {
+    height               : 17em;
+    width                : 17em;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    position             : relative;
+    -webkit-transition   : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition        : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition           : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius        : 0.31em;
+    overflow             : hidden;
+}
+
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.propiedad-image-perfildev {
+    height            : 8em;
+    width             : 100%;
+    padding           : 1em 2em;
+    position          : Absolute;
+    top               : 0px;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition     : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition        : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    background-size  : cover;
+    background-repeat: no-repeat;
+}
+
+/* Bottom Card Section */
+
+.propiedad-description {
+    background-color  : #FAFAFC;
+    height            : 10em;
+    width             : auto;
+    position          : absolute;
+    bottom            : 0em;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition     : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition        : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding           : 0.5em 1em;
+    text-align        : center;
+}
+
+/* Social Icons */
+
+.propiedad-social-icons {
+    width             : 1em;
+    height            : 1em;
+    background-color  : black;
+    position          : absolute;
+    bottom            : 1em;
+    left              : 1em;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition     : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition        : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.propiedad-card-perfildev:hover .propiedad-description {
+    height : 0em;
+    padding: 0px 1em;
+}
+
+.propiedad-card-perfildev:hover .propiedad-image-perfildev {
+    height: 18em;
+}
+
+.propiedad-card-perfildev:hover .propiedad-social-icons {
+    background-color: white;
+}
+
+.propiedad-card-perfildev:hover .propiedad-social-icons:hover {
+    background-color: blue;
+    cursor          : pointer;
+}
+
+/* ------- end card perfildev ------- */
 
 
 /* ------- mediaquery perfildev ------- */
@@ -490,9 +579,11 @@ a {
     .main .grid-plantillas {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .header .barra-busqueda input {
         min-width: 70%;
     }
+
     #searchList {
         min-width: 80%;
     }
@@ -502,9 +593,11 @@ a {
     .main .grid-plantillas {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .header .barra-busqueda input {
         min-width: 70%;
     }
+
     #searchList {
         min-width: 83%;
     }
@@ -514,22 +607,26 @@ a {
     .contenedor {
         grid-template-rows: auto;
     }
+
     .header {
-        padding: 17px;
+        padding              : 17px;
         grid-template-columns: auto auto;
-        justify-content: space-between;
-        grid-template-areas: "logo iconos" "busqueda busqueda";
+        justify-content      : space-between;
+        grid-template-areas  : "logo iconos""busqueda busqueda";
     }
+
     .header .contenedor-logo .logo-pefildev span {
         display: inline;
     }
+
     .header .barra-busqueda input {
         min-width: auto;
-        width: 100%;
+        width    : 100%;
     }
+
     #searchList {
         min-width: auto;
-        width: 100%;
+        width    : 100%;
     }
 }
 
@@ -537,16 +634,18 @@ a {
     .main .grid-plantillas {
         grid-template-columns: 1fr;
     }
+
     .header .botones-header button {
         margin-right: 0.4rem;
     }
+
     .main .hero-perfildev {
         grid-template-columns: 1fr;
     }
 
     .main .hero-perfildev .hero .img {
         grid-template-columns: 1fr;
-        display: block;
+        display              : block;
     }
 }
 
