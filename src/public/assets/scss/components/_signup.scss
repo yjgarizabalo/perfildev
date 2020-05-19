@@ -1,105 +1,120 @@
-.signup-perfildev{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: url(../img/bg-jobs-perfildev.svg) no-repeat center top;
+.signup-perfildev {
+    padding        : 0;
+    margin         : 0;
+    box-sizing     : border-box;
+    background     : url(../img/bg-jobs-perfildev.svg) no-repeat center top;
     background-size: cover;
-    height: 100vh;
+    height         : 100vh;
 }
 
 .regitro-perfildev {
-    width: 420px;
-    height: 470px;
-    background: var(--ligth);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
+    width        : 415px;
+    height       : 470px;
+    background   : var(--ligth);
+    top          : 50%;
+    left         : 50%;
+    position     : absolute;
+    transform    : translate(-50%, -50%);
+    box-sizing   : border-box;
+    padding      : 70px 30px;
     border-radius: 0.3rem;
 }
 
 .regitro-perfildev .flex-signin {
-    display: flex;
+    display       : flex;
     flex-direction: row;
 }
 
 .regitro-perfildev .item-signin {
-    display: flex;
+    display     : flex;
     margin-right: 5px;
-    width: 50%;
+    width       : 50%;
 }
 
 .regitro-perfildev .avatar {
-    width: 100px;
-    height: 100px;
+    width        : 100px;
+    height       : 100px;
     border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
+    position     : absolute;
+    top          : -50px;
+    left         : calc(50% - 50px);
 }
 
 .regitro-perfildev h3 {
-    margin: 0;
-    padding: 0;
+    margin     : 0;
+    padding    : 0;
     font-weight: 700;
-    font-size: 1.7rem;
-    text-align: center;
-    display: block;
-    padding: 0 0 20px;
+    font-size  : 1.7rem;
+    text-align : center;
+    display    : block;
+    padding    : 0 0 20px;
 }
 
 .regitro-perfildev label {
-    margin: 0;
-    padding: 0;
+    margin     : 0;
+    padding    : 0;
     font-weight: 600;
-    font-size: 0.6rem;
-    display: block;
+    font-size  : 0.6rem;
+    display    : block;
 }
 
 .regitro-perfildev input {
-    width: 100%;
+    width        : 100%;
     margin-bottom: 20px;
 }
 
 
 .regitro-perfildev .checkbox input {
-    width: auto;
+    width        : auto;
     margin-bottom: 20px;
 }
 
 .regitro-perfildev input[type="text"],
 .regitro-perfildev input[type="password"],
-.regitro-perfildev input[type="email"]{
-    border: none;
-    border: 1px solid var(--gris);
+.regitro-perfildev input[type="email"] {
+    border       : none;
+    border       : 1px solid var(--gris);
     border-radius: 0.3rem;
-    background: transparent;
+    background   : transparent;
+    font-family  : 'Poppins', sans-serif;
+    outline      : none;
+    height       : 40px;
+    padding      : 0 10px;
+}
+
+.regitro-perfildev input[type="submit"] {
     font-family: 'Poppins', sans-serif;
-    outline: none;
-    height: 40px;
-    padding: 0 10px;
 }
 
-.regitro-perfildev input[type="submit"]{
-    font-family: 'Poppins', sans-serif;
-}
-
-.regitro-perfildev input[type="checkbox"]{
-    border: none;
-    height: 10px;
-    width: 10px;
+.regitro-perfildev input[type="checkbox"] {
+    border : none;
+    height : 10px;
+    width  : 10px;
     outline: none;
 }
 
-.regitro-perfildev a, span {
+.regitro-perfildev a,
+span {
     text-emphasis: none;
-    font-size: 0.69rem;
-    line-height: 20px;
+    font-size    : 0.69rem;
+    line-height  : 20px;
 }
 
 
 .regitro-perfildev a:hover {
     color: var(--primario)
+}
+
+@media screen and (max-width: 576px) {
+    .regitro-perfildev {
+        width  : 355px;
+        padding: 70px 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .regitro-perfildev {
+        width  : 300px;
+        padding: 70px 13px;
+    }
 }
