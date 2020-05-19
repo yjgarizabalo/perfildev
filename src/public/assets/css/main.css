@@ -61,13 +61,24 @@
 .login-perfildev input[type="submit"] {
   font-family: 'Poppins', sans-serif; }
 
-.login-perfildev a, span {
+.login-perfildev a,
+span {
   text-emphasis: none;
   font-size: 0.69rem;
   line-height: 20px; }
 
 .login-perfildev a:hover {
   color: var(--primario); }
+
+@media screen and (max-width: 576px) {
+  .login-perfildev {
+    width: 355px;
+    padding: 70px 20px; } }
+
+@media screen and (max-width: 320px) {
+  .login-perfildev {
+    width: 300px;
+    padding: 70px 13px; } }
 
 .signup-perfildev {
   padding: 0;
@@ -78,7 +89,7 @@
   height: 100vh; }
 
 .regitro-perfildev {
-  width: 420px;
+  width: 415px;
   height: 470px;
   background: var(--ligth);
   top: 50%;
@@ -151,13 +162,24 @@
   width: 10px;
   outline: none; }
 
-.regitro-perfildev a, span {
+.regitro-perfildev a,
+span {
   text-emphasis: none;
   font-size: 0.69rem;
   line-height: 20px; }
 
 .regitro-perfildev a:hover {
   color: var(--primario); }
+
+@media screen and (max-width: 576px) {
+  .regitro-perfildev {
+    width: 355px;
+    padding: 70px 20px; } }
+
+@media screen and (max-width: 320px) {
+  .regitro-perfildev {
+    width: 300px;
+    padding: 70px 13px; } }
 
 .sc-contenedor {
   display: grid;
@@ -193,7 +215,7 @@
   height: 100vh; }
 
 .contact-c-perfildev {
-  width: 420px;
+  width: 415px;
   height: 470px;
   background: var(--ligth);
   top: 50%;
@@ -277,6 +299,16 @@
 
 .contact-c-perfildev input[type="submit"] {
   font-family: 'Poppins', sans-serif; }
+
+@media screen and (max-width: 576px) {
+  .contact-c-perfildev {
+    width: 355px;
+    padding: 70px 20px; } }
+
+@media screen and (max-width: 320px) {
+  .contact-c-perfildev {
+    width: 300px;
+    padding: 70px 13px; } }
 
 :root {
   --primario: #280144;

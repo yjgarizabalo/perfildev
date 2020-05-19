@@ -1,80 +1,95 @@
-.signin-perfildev{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: url(../img/bg-jobs-perfildev.svg) no-repeat center top;
+.signin-perfildev {
+    padding        : 0;
+    margin         : 0;
+    box-sizing     : border-box;
+    background     : url(../img/bg-jobs-perfildev.svg) no-repeat center top;
     background-size: cover;
-    height: 100vh;
+    height         : 100vh;
 }
 
 .login-perfildev {
-    width: 320px;
-    height: 420px;
-    background: var(--ligth);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
+    width        : 320px;
+    height       : 420px;
+    background   : var(--ligth);
+    top          : 50%;
+    left         : 50%;
+    position     : absolute;
+    transform    : translate(-50%, -50%);
+    box-sizing   : border-box;
+    padding      : 70px 30px;
     border-radius: 0.3rem;
 }
 
 .login-perfildev .avatar {
-    width: 100px;
-    height: 100px;
+    width        : 100px;
+    height       : 100px;
     border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
+    position     : absolute;
+    top          : -50px;
+    left         : calc(50% - 50px);
 }
 
 .login-perfildev h3 {
-    margin: 0;
-    padding: 0;
+    margin     : 0;
+    padding    : 0;
     font-weight: 700;
-    font-size: 1.7rem;
-    text-align: center;
-    display: block;
-    padding: 0 0 20px;
+    font-size  : 1.7rem;
+    text-align : center;
+    display    : block;
+    padding    : 0 0 20px;
 }
 
 .login-perfildev label {
-    margin: 0;
-    padding: 0;
+    margin     : 0;
+    padding    : 0;
     font-weight: 600;
-    font-size: 0.6rem;
-    display: block;
+    font-size  : 0.6rem;
+    display    : block;
 }
 
 .login-perfildev input {
-    width: 100%;
+    width        : 100%;
     margin-bottom: 20px;
 }
 
 .login-perfildev input[type="text"],
-.login-perfildev input[type="password"]{
-    border: none;
-    border: 1px solid var(--gris);
+.login-perfildev input[type="password"] {
+    border       : none;
+    border       : 1px solid var(--gris);
     border-radius: 0.3rem;
-    background: transparent;
-    font-family: 'Poppins', sans-serif;
-    outline: none;
-    height: 40px;
-    padding: 0 10px;
+    background   : transparent;
+    font-family  : 'Poppins', sans-serif;
+    outline      : none;
+    height       : 40px;
+    padding      : 0 10px;
 }
 
-.login-perfildev input[type="submit"]{
+.login-perfildev input[type="submit"] {
     font-family: 'Poppins', sans-serif;
 }
 
-.login-perfildev a, span {
+.login-perfildev a,
+span {
     text-emphasis: none;
-    font-size: 0.69rem;
-    line-height: 20px;
+    font-size    : 0.69rem;
+    line-height  : 20px;
 }
 
 
 .login-perfildev a:hover {
     color: var(--primario)
+}
+
+@media screen and (max-width: 576px) {
+    .login-perfildev {
+        width  : 355px;
+        padding: 70px 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .login-perfildev {
+        width  : 300px;
+        padding: 70px 13px;
+    }
 }
