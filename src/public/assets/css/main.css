@@ -310,6 +310,26 @@ span {
     width: 300px;
     padding: 70px 13px; } }
 
+.error404-contenedor {
+  padding: 0;
+  margin: 0;
+  background: var(--primario);
+  background-image: url(../img/error404.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: 'header';
+  text-align: center;
+  align-items: center;
+  height: 100vh; }
+
+.titulo-erro404 {
+  font-size: 3rem;
+  color: var(--blanco);
+  letter-spacing: 0.1rem;
+  font-weight: 800; }
+
 :root {
   --primario: #280144;
   --segundario: #2B0082;
@@ -734,9 +754,8 @@ a {
 
 /* Social Icons */
 .propiedad-social-icons {
-  width: 1em;
-  height: 1em;
-  background-color: black;
+  color: var(--primario);
+  font-size: 0.8rem;
   position: absolute;
   bottom: 1em;
   left: 1em;
@@ -753,11 +772,13 @@ a {
   height: 18em; }
 
 .propiedad-card-perfildev:hover .propiedad-social-icons {
-  background-color: white; }
+  background-color: var(--blanco); }
 
-.propiedad-card-perfildev:hover .propiedad-social-icons:hover {
-  background-color: blue;
+.propiedad-card-perfildev:hover {
   cursor: pointer; }
+
+.propiedad-social-icons:hover {
+  color: var(--segundario); }
 
 /* ------- end card perfildev ------- */
 /* ------- mediaquery perfildev ------- */

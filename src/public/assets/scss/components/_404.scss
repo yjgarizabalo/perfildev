@@ -1,0 +1,23 @@
+// Pagina error 404
+
+.error404-contenedor {
+    padding            : 0;
+    margin             : 0;
+    background         : var(--primario);
+    background-image   : url(../img/error404.svg);
+    background-position: center top;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    display            : grid;
+    grid-template-areas: 'header';
+    text-align         : center;
+    align-items        : center;
+    height             : 100vh;
+}
+
+.titulo-erro404 {
+    font-size: 3rem;
+    color: var(--blanco);
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+}
