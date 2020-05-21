@@ -10,6 +10,8 @@
 @import "components/sconstruccion";
 // contact
 @import "components/contact";
+// error 404
+@import "components/404";
 
 // end vistas
 
@@ -539,9 +541,8 @@ a {
 /* Social Icons */
 
 .propiedad-social-icons {
-    width             : 1em;
-    height            : 1em;
-    background-color  : black;
+    color             : var(--primario);
+    font-size         : 0.8rem;
     position          : absolute;
     bottom            : 1em;
     left              : 1em;
@@ -549,6 +550,7 @@ a {
     -o-transition     : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition        : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
 
 /* Property Cards Hover States */
 
@@ -562,12 +564,15 @@ a {
 }
 
 .propiedad-card-perfildev:hover .propiedad-social-icons {
-    background-color: white;
+    background-color: var(--blanco);
 }
 
-.propiedad-card-perfildev:hover .propiedad-social-icons:hover {
-    background-color: blue;
-    cursor          : pointer;
+.propiedad-card-perfildev:hover {
+    cursor: pointer;
+}
+
+.propiedad-social-icons:hover {
+    color: var(--segundario)
 }
 
 /* ------- end card perfildev ------- */
