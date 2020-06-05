@@ -16,8 +16,30 @@
 }
 
 .titulo-erro404 {
-    font-size: 3rem;
-    color: var(--blanco);
+    font-size     : 1.8rem;
+    color         : var(--blanco);
     letter-spacing: 0.1rem;
-    font-weight: 800;
+    font-weight   : 800;
+}
+
+.titulo-erro404 span {
+    font-size: 3rem;
+}
+
+.titulo-erro404 a {
+    margin: 15px 0px;
+}
+
+@media screen and (max-width: 576px) {
+    .titulo-erro404 {
+        font-size: 1.2rem;
+    }
+
+    .titulo-erro404 span {
+        font-size: 3rem;
+    }
+
+    .titulo-erro404 a {
+        margin: 12px 0px;
+    }
 }
