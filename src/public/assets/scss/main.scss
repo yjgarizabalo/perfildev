@@ -365,6 +365,23 @@ a {
     background: var(--primario);
 }
 
+.btn-tercero {
+    background     : var(--amarillo);
+    border         : none;
+    border-radius  : 0.31em;
+    padding        : 0.8em 1.4em;
+    color          : var(--dark);
+    cursor         : pointer;
+    transition     : .3s ease all;
+    font-size      : 1em;
+    text-decoration: none;
+    font-weight    : 600;
+}
+
+.btn-tercero:hover {
+    background: var(--naranja);
+}
+
 
 /* ------- fin botones perfildev ------- */
 

@@ -325,10 +325,24 @@ span {
   height: 100vh; }
 
 .titulo-erro404 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: var(--blanco);
   letter-spacing: 0.1rem;
   font-weight: 800; }
+
+.titulo-erro404 span {
+  font-size: 3rem; }
+
+.titulo-erro404 a {
+  margin: 15px 0px; }
+
+@media screen and (max-width: 576px) {
+  .titulo-erro404 {
+    font-size: 1.2rem; }
+  .titulo-erro404 span {
+    font-size: 3rem; }
+  .titulo-erro404 a {
+    margin: 12px 0px; } }
 
 :root {
   --primario: #280144;
@@ -617,6 +631,21 @@ a {
 .btn-secundario:hover {
   color: var(--blanco);
   background: var(--primario); }
+
+.btn-tercero {
+  background: var(--amarillo);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.8em 1.4em;
+  color: var(--dark);
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: 600; }
+
+.btn-tercero:hover {
+  background: var(--naranja); }
 
 /* ------- fin botones perfildev ------- */
 /* ------- paddings - margin perfildev ------- */
