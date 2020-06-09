@@ -6,12 +6,16 @@ const flash = require('connect-flash')
 const session = require('express-session')
 const MySQLStore = require('express-mysql-session')
 const passport = require('passport')
+const shinkRay = require('shrink-ray-current')
 
 const { database } = require('./keys')
 
 // inicilizador
 const app = express()
 require('./lib/passport')
+
+// compresor de petisiones
+app.use(shinkRay())
 
 // settings
 app.set('port', process.env.PORT || 7100)

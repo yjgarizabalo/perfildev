@@ -810,7 +810,7 @@ a {
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
-  text-align: center; }
+  text-align: left; }
 
 /* Social Icons */
 .propiedad-social-icons {
