@@ -12,7 +12,7 @@ class Search {
         let input, listContainer;
         this.el.innerHTML = `
             <input type="text" title="Busca tu profesión" placeholder="¿Qué Profesión eres?" class="input">
-            <button type="submit" title="buscar"><i class="fas fa-search"></i></button>
+            <button type="submit" title="buscar"><i class="icon-search"></i></button>
 			<list-group class="is-visible" id="searchList"></list-group>   
 		`;
         input = document.querySelector('.input');
