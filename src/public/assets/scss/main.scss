@@ -40,6 +40,7 @@ body {
     background : var(--fondo);
     font-family: 'Poppins', sans-serif;
     font-size  : 0.85em;
+    letter-spacing: 0.25px;
     color      : var(--dark);
 }
 
@@ -388,6 +389,8 @@ a {
 
 /* ------- paddings - margin perfildev ------- */
 
+// top
+
 .pt-1 {
     padding-top: 1em;
 }
@@ -409,7 +412,31 @@ a {
 }
 
 
+// bottom
+
+.pb-1 {
+    margin-bottom: 1em;
+}
+
+.pb-2 {
+    margin-bottom: 2em;
+}
+
+.pb-3 {
+    margin-bottom: 3em;
+}
+
+.pb-4 {
+    margin-bottom: 4em;
+}
+
+.pb-5 {
+    margin-bottom: 5em;
+}
+
 /* marging */
+
+// top
 
 .mt-1 {
     margin-top: 1em;
@@ -429,6 +456,28 @@ a {
 
 .mt-5 {
     margin-top: 5em;
+}
+
+// bottom
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.mb-2 {
+    margin-bottom: 2em;
+}
+
+.mb-3 {
+    margin-bottom: 3em;
+}
+
+.mb-4 {
+    margin-bottom: 4em;
+}
+
+.mb-5 {
+    margin-bottom: 5em;
 }
 
 
