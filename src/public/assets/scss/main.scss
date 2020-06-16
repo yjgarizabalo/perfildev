@@ -384,7 +384,7 @@ a {
 }
 
 .btn-descarga {
-    background     : transparent;
+    background     : var(--fondo) !important;
     border         : 1px solid var(--primario);
     border-radius  : 0.3em;
     padding        : 0.2em .5em;
@@ -396,14 +396,17 @@ a {
     font-weight    : 500;
 }
 
+.btn-descarga:hover {
+    border         : 1px solid var(--primario);
+    color     : var(--primario);
+    background: var(--fondo);
+}
+
 .btn-descarga i {
     font-size: 0.4rem;
 }
 
-.btn-descarga:hover {
-    color     : var(--blanco);
-    background: var(--primario);
-}
+
 
 
 /* ------- fin botones perfildev ------- */
@@ -616,7 +619,7 @@ a {
 .propiedad-description {
     background-color  : #FAFAFC;
     height            : 10em;
-    width             : auto;
+    width             : 100%;
     position          : absolute;
     bottom            : 0em;
     -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
