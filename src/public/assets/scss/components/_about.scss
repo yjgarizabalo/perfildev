@@ -1,0 +1,43 @@
+// about
+
+.about-perfildev {
+    padding        : 0;
+    margin         : 0;
+    box-sizing     : border-box;
+    background     : url(../img/bg-jobs-perfildev.svg) no-repeat center top;
+    background-size: cover;
+    height         : 100vh;
+}
+
+.about-perfildev .about-contenedor {
+    width : 90%;
+    margin: auto;
+    height: 100%;
+}
+
+.about-flex {
+    display    : flex;
+    align-items: center;
+    height     : 100%;
+
+}
+
+.about-row {
+    display       : flex;
+    margin-left   : 15px;
+    flex-direction: column;
+    width:100%
+}
+
+
+.about-perfildev .title-about {
+    font-size: 4em;
+}
+
+.about-perfildev .descripcion-about {
+    font-size: 1em;
+    letter-spacing: 0.05em;
+}
+
+
+// end about
