@@ -341,6 +341,38 @@ span {
   font-size: 1em;
   letter-spacing: 0.05em; }
 
+.politicas-perfildev {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: url(../img/bg-jobs-perfildev.svg) no-repeat center top;
+  background-size: cover;
+  height: 100vh; }
+
+.politicas-perfildev .politicas-contenedor {
+  width: 90%;
+  margin: auto;
+  height: 100%; }
+
+.politicas-flex {
+  display: flex;
+  height: 100%; }
+
+.politicas-row {
+  margin: 5em 0em;
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+  width: 100%; }
+
+.politicas-perfildev .title-politicas {
+  font-size: 4em; }
+
+.politicas-perfildev .descripcion-politicas {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  margin-top: 1em; }
+
 .error404-contenedor {
   padding: 0;
   margin: 0;
